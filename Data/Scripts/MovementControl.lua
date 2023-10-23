@@ -21,6 +21,13 @@ local MAX_YAW = script:GetCustomProperty("MaxYaw")
 local MAIN_CAMERA = script:GetCustomProperty("MainCamera"):WaitForObject()
 local CAMERA_POS = script:GetCustomProperty("CameraPos"):WaitForObject()
 
+--UI--
+local S = script:GetCustomProperty("S"):WaitForObject()
+local A = script:GetCustomProperty("A"):WaitForObject()
+local D = script:GetCustomProperty("D"):WaitForObject()
+local W = script:GetCustomProperty("W"):WaitForObject()
+------
+
 local player=Game.GetLocalPlayer()
 local LastMove=0
 local MyPos=3
@@ -31,6 +38,36 @@ for _,obj in pairs(CAMERA_POS:GetChildren()) do
     end
 end
 local CanMove=true
+
+function UpdateUI()
+    if CanMove==true then
+        if MyCamera:GetCustomProperty("ABlocked")==false then
+            A.visibility=Visibility.INHERIT
+        else
+            A.visibility=Visibility.FORCE_OFF
+        end
+        if MyCamera:GetCustomProperty("SBlocked")==false then
+            S.visibility=Visibility.INHERIT
+        else
+            S.visibility=Visibility.FORCE_OFF
+        end
+        if MyCamera:GetCustomProperty("DBlocked")==false then
+            D.visibility=Visibility.INHERIT
+        else
+            D.visibility=Visibility.FORCE_OFF
+        end
+        if MyCamera:GetCustomProperty("WBlocked")==false then
+            W.visibility=Visibility.INHERIT
+        else
+            W.visibility=Visibility.FORCE_OFF
+        end
+    else
+        W.visibility=Visibility.FORCE_OFF
+        A.visibility=Visibility.FORCE_OFF
+        S.visibility=Visibility.FORCE_OFF
+        D.visibility=Visibility.FORCE_OFF
+    end
+end
 
 function Move(pos)
     --Broadcast Events if needed--
@@ -60,6 +97,7 @@ function Move(pos)
     MyCamera=cam
     MAIN_CAMERA:MoveTo(cam:GetPosition(),0.5,true)
     MAIN_CAMERA:RotateTo(cam:GetRotation(),0.5,true)
+    UpdateUI()
     Task.Wait(0.5)
     if time()>=LastMove+0.4 then
         MAIN_CAMERA.currentPitch=0
@@ -105,5 +143,9 @@ function BlockMovement(status)
         MAIN_CAMERA:SetWorldRotation(player:GetViewWorldRotation())
         MAIN_CAMERA.hasFreeControl=false
     end
+    UpdateUI()
 end
 Events.Connect("BlockMovement",BlockMovement)
+
+
+UpdateUI()

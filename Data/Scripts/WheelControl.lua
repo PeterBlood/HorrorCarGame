@@ -15,12 +15,25 @@ local CONNECT = script:GetCustomProperty("Connect"):WaitForObject()
 
 ------------------Generating Wires-------------------
 
------------------------------------------------------------------------put random color generation here!!!!
-local PWColor=Color.New(1,0,1)
-local SWColor=Color.New(0,1,0)
-local AWColor=Color.New(1,1,0)
-local BWColor=Color.New(1,0,0)
+--Generating Random Color--
+local PWColor=Color.New(math.random(2)-1,math.random(2)-1,math.random(2)-1)
+local SWColor=Color.New(math.random(2)-1,math.random(2)-1,math.random(2)-1)
+local AWColor=Color.New(math.random(2)-1,math.random(2)-1,math.random(2)-1)
+local BWColor=Color.New(math.random(2)-1,math.random(2)-1,math.random(2)-1)
+while PWColor==SWColor or PWColor==AWColor or PWColor==BWColor do
+    PWColor=Color.New(math.random(2)-1,math.random(2)-1,math.random(2)-1)
+end
+while SWColor==PWColor or SWColor==AWColor or SWColor==BWColor do
+    SWColor=Color.New(math.random(2)-1,math.random(2)-1,math.random(2)-1)
+end
+while AWColor==PWColor or AWColor==SWColor or AWColor==BWColor do
+    AWColor=Color.New(math.random(2)-1,math.random(2)-1,math.random(2)-1)
+end
+while BWColor==PWColor or BWColor==AWColor or BWColor==SWColor do
+    BWColor=Color.New(math.random(2)-1,math.random(2)-1,math.random(2)-1)
+end
 local FourWires=true
+------------------------
 function GenerateWires()
     for a=1,2 do    -- generate power wire
         local count=0
@@ -149,7 +162,11 @@ function InteractionPress(ref)
     for _,obj2 in pairs(WIRES:GetChildren()) do
         local Cut=obj2:GetCustomProperty("Cut"):WaitForObject()
         if obj==Cut then
-            ---------------------------------------------------------------put check for gloves here
+            if _G.PlayerEquipment.Gloves==0 and obj2:GetCustomProperty("Type")==1 then
+                -----------------------------------------------------------------------------------------put electricution death event here!!!
+                print("BZZZZZZ DEAD") --------------------------------------------------------------------
+                return
+            end
             if HoldingWire==nil then
                 HoldingWire=Cut
                 CONNECT_DOT.visibility=Visibility.FORCE_ON

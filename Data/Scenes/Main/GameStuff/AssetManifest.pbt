@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15950351313524654978
+  Name: "Play"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "PlayRegular_ref"
+  }
+}
+Assets {
   Id: 15855081481126140438
   Name: "Decal Numbers and Symbols 01"
   PlatformAssetType: 14
@@ -185,6 +194,15 @@ Assets {
   PrimaryAsset {
     AssetType: "SkeletonAssetRef"
     AssetId: "npc_guy_wireframe_001_ref"
+  }
+}
+Assets {
+  Id: 14582790818618070150
+  Name: "Asphalt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_asphault_001"
   }
 }
 Assets {
@@ -302,6 +320,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_urb_car_kit_door_front_001_ref"
+  }
+}
+Assets {
+  Id: 12117673785908690693
+  Name: "Urban Utensil Tong Right 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_tong_001_r_001_ref"
   }
 }
 Assets {
@@ -548,6 +575,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5661890250045984682
+  Name: "Prism - 6-Sided Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_hexagon_001"
+  }
+}
+Assets {
   Id: 5527076847339463923
   Name: "Fantasy Shape 005"
   PlatformAssetType: 9
@@ -707,6 +743,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_urb_car_acc_rack_storage_rail_001_bottom_end_001_ref"
+  }
+}
+Assets {
+  Id: 1407341224280421154
+  Name: "Abstract Frame 10"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Core_UI_AbstractPackFrame_004"
   }
 }
 Assets {

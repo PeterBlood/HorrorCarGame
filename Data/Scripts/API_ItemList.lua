@@ -39,6 +39,11 @@ API["Cut5"]={}
 API["Cut5"]["Category"]="Interactable"
 API["CutPos5"]={}
 API["CutPos5"]["Category"]="Interactable"
+API["HeadlightsSwitch"]={}
+API["HeadlightsSwitch"]["Category"]="Interactable"
+API["WindshieldsSwitch"]={}
+API["WindshieldsSwitch"]["Category"]="Interactable"
+
 
 --DoorStuff--
 API["lock"]={}
