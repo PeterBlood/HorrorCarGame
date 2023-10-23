@@ -1,0 +1,59 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "3492ba137b754844884a8eff3b4a49b8"
+  OwnerAccountId: "8628cf490cee4cb4b31a1369d9afdfa8"
+  OwnerName: "Jquizzle823"
+  Version: "1.0.0"
+}
+AssetIdsOriginalToNew {
+  key: 872362227305855633
+  value: 16469949394401073532
+}
+AssetIdsOriginalToNew {
+  key: 7468942086410332888
+  value: 11502038853873010924
+}
+AssetIdsOriginalToNew {
+  key: 8181433913851879488
+  value: 1781610470503674395
+}
+AssetIdsOriginalToNew {
+  key: 8686084884678877544
+  value: 6290294930295011467
+}
+AssetIdsOriginalToNew {
+  key: 9134145915392095925
+  value: 17515553443328434078
+}
+AssetIdsOriginalToNew {
+  key: 10459799692773584775
+  value: 14023656069038988948
+}
+AssetIdsOriginalToNew {
+  key: 10802647315227296170
+  value: 16471869029501302383
+}
+AssetIdsOriginalToNew {
+  key: 10870736744579276076
+  value: 13902717555345411831
+}
+AssetIdsOriginalToNew {
+  key: 13637897720912090573
+  value: 7129712597974456146
+}
+AssetIdsOriginalToNew {
+  key: 14476236880088362469
+  value: 718017890502813061
+}
+AssetIdsOriginalToNew {
+  key: 15319789023552877319
+  value: 5189395615357897828
+}
+AssetIdsOriginalToNew {
+  key: 17740066763423245503
+  value: 15465846089956402329
+}
+AssetIdsOriginalToNew {
+  key: 18213426112925833362
+  value: 3526596024918664220
+}
