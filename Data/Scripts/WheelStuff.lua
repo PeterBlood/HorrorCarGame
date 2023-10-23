@@ -68,7 +68,7 @@ Events.Connect("ChangeHeadlightsMode",ChangeHeadlightsMode)
 function InteractionPress(ref)
     local obj=ref:GetObject()
     if obj==WINDSHIELDS_SWITCH then
-        Events.Broadcast("ChangeWiperMode")
+        Events.Broadcast("ChangeWipersMode")
     elseif obj==HEADLIGHTS_SWITCH then
         Events.Broadcast("ChangeHeadlightsMode")
     end

@@ -67,18 +67,18 @@ function InteractionPress(ref)
     local obj=ref:GetObject()
     if obj==LOCK and DOOR:GetCustomProperty("Door")==100 and DOOR:GetCustomProperty("Lock")==false then
         DOOR:SetCustomProperty("Lock",true)
-        LockT=time()+10----------------Timing out this killer interaction. move it into killer AI when I make one, and put here event to call it
-        DoorT=time()+10----------------Timing out this killer interaction. move it into killer AI when I make one, and put here event to call it
+        --LockT=time()+10----------------Timing out this killer interaction. move it into killer AI when I make one, and put here event to call it
+        --DoorT=time()+10----------------Timing out this killer interaction. move it into killer AI when I make one, and put here event to call it
     end
     if obj==HANDLE and DOOR:GetCustomProperty("Door")<100 then
         DOOR:SetCustomProperty("Door",100)
-        DoorT=time()+10----------------Timing out this killer interaction. move it into killer AI when I make one, and put here event to call it
+        --DoorT=time()+10----------------Timing out this killer interaction. move it into killer AI when I make one, and put here event to call it
     end
 end
 function InteractionHold(ref)
     local obj=ref:GetObject()
     if obj==WINDOW_HANDLE then
-        WindowT=time()+10----------------Timing out this killer interaction. move it into killer AI when I make one, and put here event to call it
+        --WindowT=time()+10----------------Timing out this killer interaction. move it into killer AI when I make one, and put here event to call it
         HoldInProgress=true
         while HoldInProgress==true do
             local pr=DOOR:GetCustomProperty("Window")+5
@@ -99,7 +99,7 @@ Events.Connect("InteractionHold",InteractionHold)
 Events.Connect("ReleaseInteraction",ReleaseInteraction)
 Events.Connect("InteractionPress",InteractionPress)
 
-----------Opening all doors, locks and windows. Move it to killer AI when I'll make one--------------
+--[[--------Opening all doors, locks and windows. Move it to killer AI when I'll make one--------------
 function Tick()
     if time()>=LockT+15 and DOOR:GetCustomProperty("Lock")==true then
         LockT=time()
@@ -126,4 +126,4 @@ function Tick()
     end
     Task.Wait(0.1)
 end
-------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------]]

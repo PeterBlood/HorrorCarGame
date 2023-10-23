@@ -12920,8 +12920,8 @@ Objects {
   ChildIds: 7256590037386662780
   ChildIds: 15764083974856407578
   ChildIds: 17175050216304934046
-  ChildIds: 4599783404764426906
-  ChildIds: 13227232451125440640
+  ChildIds: 17038406455462369968
+  ChildIds: 12746299643193302324
   ChildIds: 3847464031161428463
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13113,454 +13113,88 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 13227232451125440640
+  Id: 12746299643193302324
   Name: "WindshieldsSwitch"
   Transform {
-    Location {
-      X: -349.268311
-      Y: 279.281708
-      Z: 141.249695
-    }
-    Rotation {
-      Pitch: 45.0413704
-      Yaw: 180
-      Roll: 180
-    }
-    Scale {
-      X: 0.749096513
-      Y: 0.749096513
-      Z: 0.749096513
-    }
-  }
-  ParentId: 2391263011315130328
-  ChildIds: 7049679221764123178
-  ChildIds: 9817665236676176907
-  ChildIds: 9632527898116576625
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 9632527898116576625
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 34.1089821
-      Y: 9.17474842
-      Z: 33.9230499
-    }
-    Rotation {
-      Pitch: 46.079113
-      Yaw: -169.165955
-      Roll: 86.9568863
-    }
-    Scale {
-      X: 0.0647954
-      Y: 0.390439868
-      Z: 0.0692918897
-    }
-  }
-  ParentId: 13227232451125440640
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-    InteractionTemplate {
-      Id: 841534158063459245
-    }
-    BreadcrumbTemplate {
-      Id: 841534158063459245
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 9817665236676176907
-  Name: "Cube - Rounded"
-  Transform {
-    Location {
-      X: 39.9604187
-      Y: 10.7486267
-      Z: 39.7425842
-    }
-    Rotation {
-      Pitch: 46.079113
-      Yaw: -169.165955
-      Roll: 86.9568863
-    }
-    Scale {
-      X: 0.0586404316
-      Y: 0.200538874
-      Z: 0.0586405396
-    }
-  }
-  ParentId: 13227232451125440640
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 132672053610873933
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16217729595228146144
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  Relevance {
-    Value: "mc:edistancerelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 7049679221764123178
-  Name: "Urban Utensil Tong Right 01"
-  Transform {
-    Location {
-      X: 37.9462891
-      Y: 10.2068787
-      Z: 37.7394409
-    }
-    Rotation {
-      Pitch: 46.079113
-      Yaw: -169.165955
-      Roll: 86.9568863
-    }
     Scale {
       X: 1
-      Y: 1.07276654
+      Y: 1
       Z: 1
     }
   }
-  ParentId: 13227232451125440640
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12117673785908690693
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  ParentId: 2391263011315130328
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10856222541190136702
+      value {
+        Overrides {
+          Name: "Name"
+          String: "WindshieldsSwitch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -349.268311
+            Y: 279.281708
+            Z: 141.249695
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 45.0413361
+            Yaw: -179.999985
+            Roll: -179.999985
+          }
+        }
       }
-      BoundsScale: 1
+    }
+    TemplateAsset {
+      Id: 13437738320130035746
     }
   }
-  Relevance {
-    Value: "mc:edistancerelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 4599783404764426906
+  Id: 17038406455462369968
   Name: "HeadlightsSwitch"
   Transform {
-    Location {
-      X: -349.296906
-      Y: 276.314575
-      Z: 141.411041
-    }
-    Rotation {
-      Pitch: 69.2229614
-      Yaw: 144.793259
-      Roll: 145.10704
-    }
-    Scale {
-      X: 0.771330118
-      Y: 0.771330118
-      Z: 0.771330118
-    }
-  }
-  ParentId: 2391263011315130328
-  ChildIds: 6761170723330925692
-  ChildIds: 888277982434897984
-  ChildIds: 6638021419322166287
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 6638021419322166287
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 33.8905067
-      Y: 9.11594486
-      Z: 33.7057838
-    }
-    Rotation {
-      Pitch: 46.079113
-      Yaw: -169.165955
-      Roll: 86.9568863
-    }
-    Scale {
-      X: 0.0629276633
-      Y: 0.379185408
-      Z: 0.0672945455
-    }
-  }
-  ParentId: 4599783404764426906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-    InteractionTemplate {
-      Id: 841534158063459245
-    }
-    BreadcrumbTemplate {
-      Id: 841534158063459245
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 888277982434897984
-  Name: "Cube - Rounded"
-  Transform {
-    Location {
-      X: 39.9604187
-      Y: 10.7486267
-      Z: 39.7425842
-    }
-    Rotation {
-      Pitch: 46.079113
-      Yaw: -169.165955
-      Roll: 86.9568863
-    }
-    Scale {
-      X: 0.0586404316
-      Y: 0.200538874
-      Z: 0.0586405396
-    }
-  }
-  ParentId: 4599783404764426906
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 132672053610873933
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16217729595228146144
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  Relevance {
-    Value: "mc:edistancerelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 6761170723330925692
-  Name: "Urban Utensil Tong Right 01"
-  Transform {
-    Location {
-      X: 37.9462891
-      Y: 10.2068787
-      Z: 37.7394409
-    }
-    Rotation {
-      Pitch: 46.079113
-      Yaw: -169.165955
-      Roll: 86.9568863
-    }
     Scale {
       X: 1
-      Y: 1.07276654
+      Y: 1
       Z: 1
     }
   }
-  ParentId: 4599783404764426906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12117673785908690693
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  ParentId: 2391263011315130328
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16382736525861644031
+      value {
+        Overrides {
+          Name: "Name"
+          String: "HeadlightsSwitch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -349.296906
+            Y: 276.314575
+            Z: 141.411041
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 69.2229614
+            Yaw: 144.793259
+            Roll: 145.10704
+          }
+        }
       }
-      BoundsScale: 1
+    }
+    TemplateAsset {
+      Id: 11307539673769406642
     }
   }
-  Relevance {
-    Value: "mc:edistancerelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17175050216304934046
@@ -18766,7 +18400,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Lock"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Window"
@@ -19112,9 +18746,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -38.9673462
+            X: -31.3909988
             Y: 150.765442
-            Z: 60.0528564
+            Z: 53.653
           }
         }
         Overrides {
@@ -20204,7 +19838,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Lock"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Window"
@@ -20550,9 +20184,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -38.9673462
+            X: -31.3909912
             Y: 150.765442
-            Z: 60.0528564
+            Z: 53.653
           }
         }
         Overrides {
@@ -21642,7 +21276,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Lock"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Window"
@@ -21993,9 +21627,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -38.9673615
+            X: -31.3909988
             Y: 150.765442
-            Z: 60.0528564
+            Z: 53.653
           }
         }
         Overrides {
@@ -23231,7 +22865,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Lock"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Window"
@@ -23527,9 +23161,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -38.9673462
+            X: -31.3909912
             Y: 150.765442
-            Z: 60.0528564
+            Z: 53.653
           }
         }
         Overrides {
@@ -53550,7 +53184,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
