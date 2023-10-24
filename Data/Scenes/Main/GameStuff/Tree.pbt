@@ -4305,6 +4305,7 @@ Objects {
   }
   ParentId: 35699749381870200
   ChildIds: 13693004009956782534
+  ChildIds: 10642498824332749495
   ChildIds: 5981572956201102382
   ChildIds: 3567959178173361743
   ChildIds: 11588563302349693090
@@ -5156,6 +5157,493 @@ Objects {
     ScriptAsset {
       Id: 4299833716161672004
     }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 10642498824332749495
+  Name: "DeathPos"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13283165610152004226
+  ChildIds: 12219418150919073665
+  ChildIds: 17132428301586031544
+  ChildIds: 6488705087952682336
+  ChildIds: 12963361436292274523
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 12963361436292274523
+  Name: "4"
+  Transform {
+    Location {
+      X: -194
+      Y: 578.203735
+      Z: 177.2
+    }
+    Rotation {
+      Yaw: -10
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10642498824332749495
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:W"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:WBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:A"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:ABlocked"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:S"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:SBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:D"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:DBlocked"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:MaxPitch"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:MaxYaw"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:WBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ABlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:SBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:DBlocked:isrep"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Camera {
+    MinDistance: 50
+    MaxDistance: 1200
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+    AudioListenerOffset {
+    }
+    EnablePictureInPicture: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 6488705087952682336
+  Name: "3"
+  Transform {
+    Location {
+      X: -349
+      Y: 578.204
+      Z: 177.2
+    }
+    Rotation {
+      Yaw: -170
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10642498824332749495
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:W"
+      Int: 7
+    }
+    Overrides {
+      Name: "cs:WBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:A"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:ABlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:S"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:SBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:D"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:DBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:MaxPitch"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:MaxYaw"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:WBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ABlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:SBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:DBlocked:isrep"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Camera {
+    MinDistance: 50
+    MaxDistance: 1200
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+    AudioListenerOffset {
+    }
+    EnablePictureInPicture: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 17132428301586031544
+  Name: "2"
+  Transform {
+    Location {
+      X: -194.011902
+      Y: 377.088043
+      Z: 177.246719
+    }
+    Rotation {
+      Yaw: -8.63632202
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10642498824332749495
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:W"
+      Int: 6
+    }
+    Overrides {
+      Name: "cs:WBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:A"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:ABlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:S"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:SBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:D"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:DBlocked"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:MaxPitch"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:MaxYaw"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:WBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ABlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:SBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:DBlocked:isrep"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Camera {
+    MinDistance: 50
+    MaxDistance: 1200
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+    AudioListenerOffset {
+    }
+    EnablePictureInPicture: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 12219418150919073665
+  Name: "1"
+  Transform {
+    Location {
+      X: -349.631714
+      Y: 377.088043
+      Z: 177.246719
+    }
+    Rotation {
+      Yaw: -171.731461
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10642498824332749495
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:W"
+      Int: 8
+    }
+    Overrides {
+      Name: "cs:WBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:A"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:ABlocked"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:S"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:SBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:D"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:DBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:MaxPitch"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:MaxYaw"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:WBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ABlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:SBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:DBlocked:isrep"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Camera {
+    MinDistance: 50
+    MaxDistance: 1200
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+    AudioListenerOffset {
+    }
+    EnablePictureInPicture: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"

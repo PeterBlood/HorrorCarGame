@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10858225951265488017
+  Name: "Cube - Inverted"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_inverted_001_ref"
+  }
+}
+Assets {
   Id: 7562272315664860778
   Name: "Humanoid 1 Viper Pants"
   PlatformAssetType: 26

@@ -14,6 +14,7 @@ local DOOR_4 = script:GetCustomProperty("Door4"):WaitForObject()
     local WINDOW = script:GetCustomProperty("Window")   -- int- 0 - 100
     local DOOR = script:GetCustomProperty("Door")   -- int- 0 - 100
 ]]
+local Dead=false
 local Hidden=true
 local CurrentPhase=0
 local NextPhase=time()+5
@@ -227,11 +228,17 @@ function AdvancePhase()
     end
 end
 
-function Kill()
+function Kill(ID)
     print("AAAAAAAA KILLED")
+    Dead=true
+    KILLER.visibility=Visibility.FORCE_OFF
+    Events.Broadcast("BlockMovement",true)
+    Task.Wait(0.5)
+    Events.Broadcast("DoorDeath",ID)
 end
 
 function Tick()
+    if Dead==true then return end
     if time()>NextPause and time()<NextPhase then
         --print("Pause "..NextPhase-time())
         if Hidden==false then
@@ -278,7 +285,7 @@ function Tick()
     for a=1,4 do
         local str="Door"..a
         if script:GetCustomProperty(str):WaitForObject():GetCustomProperty("Door")<=0 then
-            Kill()
+            Kill(a)
         end
     end
     Task.Wait(0.1)
