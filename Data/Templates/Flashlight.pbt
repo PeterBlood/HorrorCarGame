@@ -15,9 +15,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 7345491780355375106
         ChildIds: 12528926677669870538
         ChildIds: 12890307879266478211
+        ChildIds: 9313048050235404499
         UnregisteredParameters {
           Overrides {
             Name: "cs:DefPos"
@@ -1453,6 +1454,7 @@ Assets {
         ChildIds: 3079056368235862502
         ChildIds: 2579357341824033006
         ChildIds: 13070174908774148457
+        ChildIds: 4707500431060133990
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2466,6 +2468,80 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
+        Id: 4707500431060133990
+        Name: "Spotlight"
+        Transform {
+          Location {
+            X: 42.6856956
+            Y: 5.59791851
+            Z: 197.838287
+          }
+          Rotation {
+            Pitch: 80.5626907
+            Yaw: -81.2524414
+            Roll: -89.9868469
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8970989771757050825
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Light {
+          Intensity: 50
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 500
+              SpotLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                InnerConeAngle: 15
+                OuterConeAngle: 25
+                Profile {
+                  Value: "mc:espotlightprofile:flashlightnarrow"
+                }
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
+          ShadowBias: 0.4
+          ShadowSlopeBias: 0.6
+        }
+        Relevance {
+          Value: "mc:edistancerelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
         Id: 2035222426128998741
         Name: "Head"
         Transform {
@@ -2799,6 +2875,64 @@ Assets {
           }
           BreadcrumbTemplate {
             Id: 841534158063459245
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 9313048050235404499
+        Name: "FlashlightControl"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13067627822428563272
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Flashlight"
+            ObjectReference {
+              SubObjectId: 13067627822428563272
+            }
+          }
+          Overrides {
+            Name: "cs:OFF"
+            ObjectReference {
+              SubObjectId: 1379430074099336320
+            }
+          }
+          Overrides {
+            Name: "cs:FL"
+            ObjectReference {
+              SubObjectId: 8970989771757050825
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 9192539366789280432
           }
         }
         NetworkRelevanceDistance {

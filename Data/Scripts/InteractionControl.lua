@@ -9,8 +9,11 @@ Events.Broadcast("ReleaseInteraction")
 Events.Broadcast("PlayerEquipmentChanged")  --To let interactables know that they need to update info.
 Events.Broadcast("PickedItem",ObjectReference) --ObjectReference refers to wich object I picked up
 Events.Broadcast("LookAtItem",true/false)    --To let object that I'm holding know that I'm looking on it
+Events.Broadcast("KillerDistraction",DistractionTime)   -- Tells killer to go away for some time (DistractionTime)
 
 Events.Connect("BlockInteractions",EndTime) -- EndTime refers to when Interactions will be unblocked
+Events.Connect("StopLooking",StopLooking)
+Events.Connect("ReleaseItem",ReleaseItem)
 ]]
 local API_ITEM_LIST = require(script:GetCustomProperty("API_ItemList"))
 
@@ -44,7 +47,20 @@ function Tick()
                                 if (Target:GetCustomProperty("NeedItem")=="" or (HoldingItem~=nil and HoldingItem.name==Target:GetCustomProperty("NeedItem"))) and Target:GetCustomProperty("Blocked")==false then
                                     Target0=Target
                                     break
-                                end
+                                ----------------Distraction------------------
+                                elseif Target:GetCustomProperty("NeedItem")=="Distraction" and HoldingItem~=nil and Target:GetCustomProperty("Blocked")==false then
+                                    local DistItem=false
+                                    for name,info in pairs(API_ITEM_LIST) do
+                                        if info["Category"]=="Item" and info["Distraction"]==true and HoldingItem.name==name then
+                                            DistItem=true
+                                            break
+                                        end
+                                    end
+                                    if DistItem==true then
+                                        Target0=Target
+                                        break
+                                    end
+                                end-----------------------------------------
                             else
                                 Target0=Target
                                 break
@@ -154,7 +170,23 @@ function Press(_,action,_)
                         InteractionHold=true
                     end
                     Events.Broadcast(event,ref)
-                end
+                -------------Distraction---------------
+                elseif TargetObject:GetCustomProperty("NeedItem")=="Distraction" and HoldingItem~=nil and TargetObject:GetCustomProperty("Blocked")==false then
+                    local DistItem=false
+                    for name,info in pairs(API_ITEM_LIST) do
+                        if info["Category"]=="Item" and info["Distraction"]==true and HoldingItem.name==name then
+                            DistItem=true
+                            break
+                        end
+                    end
+                    if DistItem==true then
+                        local ref=TargetObject:GetReference()
+                        Events.Broadcast("KillerDistraction",API_ITEM_LIST[HoldingItem.name]["DistractionTime"])
+                        local item=HoldingItem
+                        HoldingItem=nil
+                        item:FindChildByName("Geo"):SetRotation(Rotation.New(0,0,0))
+                    end
+                end-------------------------------------
             end
         end
     end
@@ -198,3 +230,21 @@ function BlockEvent(EndTime)
     UnblockInteractions()
 end
 Events.Connect("BlockInteractions",BlockEvent)
+
+
+function StopLooking()
+    LookingAtItem=false
+    Events.Broadcast("LookAtItem",false)
+    LookFocus()
+end
+Events.Connect("StopLooking",StopLooking)
+function ReleaseItem()
+    if HoldingItem~=nil then
+        local item=HoldingItem
+        HoldingItem=nil
+        item:SetWorldPosition(item:GetCustomProperty("DefPos"))
+        item:SetWorldRotation(item:GetCustomProperty("DefRot"))
+        item:FindChildByName("Geo"):SetRotation(Rotation.New(0,0,0))
+    end
+end
+Events.Connect("ReleaseItem",ReleaseItem)

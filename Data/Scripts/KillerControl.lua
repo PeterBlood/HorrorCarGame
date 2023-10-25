@@ -5,6 +5,12 @@ local DOOR_2 = script:GetCustomProperty("Door2"):WaitForObject()
 local DOOR_3 = script:GetCustomProperty("Door3"):WaitForObject()
 local DOOR_4 = script:GetCustomProperty("Door4"):WaitForObject()
 
+--[[
+    local CAMERA_ID = script:GetCustomProperty("CameraID")
+    local NEED_ITEM = script:GetCustomProperty("NeedItem")
+    local HOLD_INTERACTION = script:GetCustomProperty("HoldInteraction")
+    local BLOCKED = script:GetCustomProperty("Blocked")
+]]
 --Door1 -30,140,-93
 --Door2 30,140,-93
 --Door3 -30,110,-93
@@ -93,6 +99,7 @@ function Hide()
     KILLER:MoveTo(pos+Vector3.New(0,0,-300),0.5,true)
     Hidden=true
     CurrentDoorID=0
+    KILLER:SetCustomProperty("CameraID",0)
     Task.Wait(0.5)
 end
 
@@ -101,15 +108,19 @@ function JumpToDoor(ID)
     if ID==1 then
         KILLER:SetWorldPosition(DOOR_1:GetWorldPosition()+Vector3.New(-30,140,-393))
         KILLER:MoveTo(DOOR_1:GetWorldPosition()+Vector3.New(-30,140,-93),0.5)
+        KILLER:SetCustomProperty("CameraID",1)
     elseif ID==2 then
         KILLER:SetWorldPosition(DOOR_2:GetWorldPosition()+Vector3.New(30,140,-393))
         KILLER:MoveTo(DOOR_2:GetWorldPosition()+Vector3.New(30,140,-93),0.5)
+        KILLER:SetCustomProperty("CameraID",2)
     elseif ID==3 then
         KILLER:SetWorldPosition(DOOR_3:GetWorldPosition()+Vector3.New(-30,110,-393))
         KILLER:MoveTo(DOOR_3:GetWorldPosition()+Vector3.New(-30,110,-93),0.5)
+        KILLER:SetCustomProperty("CameraID",4)
     elseif ID==4 then
         KILLER:SetWorldPosition(DOOR_4:GetWorldPosition()+Vector3.New(30,110,-393))
         KILLER:MoveTo(DOOR_4:GetWorldPosition()+Vector3.New(30,110,-93),0.5)
+        KILLER:SetCustomProperty("CameraID",4)
     end
     Task.Wait(0.5)
     DoorTime[ID]["JumpT"]=time()+2
@@ -233,6 +244,8 @@ function Kill(ID)
     Dead=true
     KILLER.visibility=Visibility.FORCE_OFF
     Events.Broadcast("BlockMovement",true)
+    Events.Broadcast("StopLooking")
+    Events.Broadcast("ReleaseItem")
     Task.Wait(0.5)
     Events.Broadcast("DoorDeath",ID)
 end
@@ -290,3 +303,12 @@ function Tick()
     end
     Task.Wait(0.1)
 end
+
+
+function KillerDistraction(DistTime)
+    Phase[CurrentPhase]["PhaseDuration"]=NextPause-time()
+    NextPhase=time()+DistTime
+    NextPause=time()-1
+    CurrentPhase=CurrentPhase-1
+end
+Events.Connect("KillerDistraction",KillerDistraction)

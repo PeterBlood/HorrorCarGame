@@ -10,9 +10,13 @@ local API={}
     API[ ObjectName ]["Category"]="Item" -- "Item" - means it's an object you pick up and hold in your hands.
     API[ ObjectName ]["Category"]="Equipment" -- "Equipment" - means it's an object you pick up and it dissapears but adds you some effect. For example Gloves block electricity so you can touch wires for hotwire route.
     API[ ObjectName ]["Category"]="Interactable" -- "Interactable" - means it's an object you can interact with.
+    API["Flashlight"]["Distraction"]=true/false -- Only can be used if Category is "Item". If marked as Distraction can be used on killer.
+    API["Flashlight"]["DistractionTime"]=30 -- Only can be used if "Distraction"==true. How long it times out killer for.
 ]]
 
 
+API["Killer"]={}
+API["Killer"]["Category"]="Interactable"
 
 --WheelStuff--
 API["Bolt"]={}
@@ -63,23 +67,27 @@ API["Screwdriver"]={}
 API["Screwdriver"]["Type"]={}
 API["Screwdriver"]["Type"][1]="Medium"
 API["Screwdriver"]["Category"]="Item"
+API["Screwdriver"]["Distraction"]=false
 
 API["WireCutters"]={}
 API["WireCutters"]["Type"]={}
 API["WireCutters"]["Type"][1]="Medium"
 API["WireCutters"]["Category"]="Item"
+API["WireCutters"]["Distraction"]=false
 
 API["CarManual"]={}
 API["CarManual"]["Type"]={}
 API["CarManual"]["Type"][1]="Medium"
 API["CarManual"]["Type"][2]="Paper"
 API["CarManual"]["Category"]="Item"
+API["CarManual"]["Distraction"]=false
 
 API["HotwireManual"]={}
 API["HotwireManual"]["Type"]={}
 API["HotwireManual"]["Type"][1]="Medium"
 API["HotwireManual"]["Type"][2]="Paper"
 API["HotwireManual"]["Category"]="Item"
+API["HotwireManual"]["Distraction"]=false
 --------Phone Route--------
 API["Batteries"]={}
 API["Batteries"]["Type"]={}
@@ -90,16 +98,20 @@ API["Flashlight"]={}
 API["Flashlight"]["Type"]={}
 API["Flashlight"]["Type"][1]="Medium"
 API["Flashlight"]["Category"]="Item"
+API["Flashlight"]["Distraction"]=true
+API["Flashlight"]["DistractionTime"]=30
 
 API["Phone"]={}
 API["Phone"]["Type"]={}
 API["Phone"]["Type"][1]="Medium"
 API["Phone"]["Category"]="Item"
+API["Phone"]["Distraction"]=false
 
 API["PhoneBook"]={}
 API["PhoneBook"]["Type"]={}
 API["PhoneBook"]["Type"][1]="Medium"
 API["PhoneBook"]["Type"][2]="Paper"
 API["PhoneBook"]["Category"]="Item"
+API["PhoneBook"]["Distraction"]=false
 
 return API
