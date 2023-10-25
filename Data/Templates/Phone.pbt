@@ -15,11 +15,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 7345491780355375106
         ChildIds: 10415104506611032861
         ChildIds: 2162012420588255532
         ChildIds: 6433729762575491566
         ChildIds: 10300420266287072160
+        ChildIds: 1956886507422409283
+        ChildIds: 6149621508547241238
+        ChildIds: 4116607456108460590
         UnregisteredParameters {
           Overrides {
             Name: "cs:DefPos"
@@ -8398,6 +8401,24 @@ Assets {
               SubObjectId: 11478734835517158446
             }
           }
+          Overrides {
+            Name: "cs:ClickSFX"
+            ObjectReference {
+              SubObjectId: 1956886507422409283
+            }
+          }
+          Overrides {
+            Name: "cs:BatterySFX"
+            ObjectReference {
+              SubObjectId: 6149621508547241238
+            }
+          }
+          Overrides {
+            Name: "cs:PowerOFFSFX"
+            ObjectReference {
+              SubObjectId: 4116607456108460590
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -8416,6 +8437,135 @@ Assets {
           ScriptAsset {
             Id: 14928140468920880960
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 1956886507422409283
+        Name: "ClickSFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6841860488015310373
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 3856266032877846100
+          }
+          Pitch: -900
+          Volume: 0.4
+          Falloff: -1
+          Radius: -1
+          StartTime: 0.1
+          StopTime: 0.4
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 6149621508547241238
+        Name: "BatterySFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6841860488015310373
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 4023462182134722840
+          }
+          Volume: 1
+          Falloff: -1
+          Radius: -1
+          FadeOutTime: 0.5
+          StopTime: 0.5
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 4116607456108460590
+        Name: "PowerOFFSFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6841860488015310373
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 16348263103969933339
+          }
+          Pitch: -1600
+          Volume: 1
+          Falloff: -1
+          Radius: -1
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -8664,6 +8814,33 @@ Assets {
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "TekoLight_ref"
+      }
+    }
+    Assets {
+      Id: 3856266032877846100
+      Name: "Heart EKG Monitor Beep Single 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_heart_ekg_monitor_beep_single_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4023462182134722840
+      Name: "Steam Mechanical Gear Lock Load Mechanism Light 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_steam_mechanical_gear_lock_load_mechanism_light_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 16348263103969933339
+      Name: "Walkie Talkie Radio Beep 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_walkie_talkie_radio_beep_02_Cue_ref"
       }
     }
     PrimaryAssetId {

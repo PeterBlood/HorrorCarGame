@@ -10,6 +10,9 @@ Events.Connect("DialogEnded")   -- Tells to all items that dialogue ended
 local PHONE = script:GetCustomProperty("Phone"):WaitForObject()
 local BATTERY_SIGN = script:GetCustomProperty("BatterySign"):WaitForObject()
 local TEXT = script:GetCustomProperty("Text"):WaitForObject()
+local CLICK_SFX = script:GetCustomProperty("ClickSFX"):WaitForObject()
+local BATTERY_SFX = script:GetCustomProperty("BatterySFX"):WaitForObject()
+local POWER_OFFSFX = script:GetCustomProperty("PowerOFFSFX"):WaitForObject()
 
 local Charged=false
 local Holding=false
@@ -22,6 +25,7 @@ end
 function Charge()
     if Charged==false then
         if _G.PlayerEquipment.Batteries==1 then
+            BATTERY_SFX:Play()
             _G.PlayerEquipment.Batteries=0
             Charged=true
             BATTERY_SIGN.visibility=Visibility.FORCE_OFF
@@ -82,6 +86,9 @@ function Pressed(_,action,_)
         ResetScreen()
     elseif action=="0" or action=="1" or action=="2" or action=="3" or action=="4" or action=="5" or action=="6" or action=="7" or action=="8" or action=="9" then
         if #TEXT.text<10 then
+            CLICK_SFX:Stop()
+            CLICK_SFX.pitch=-900+tonumber(action*100)
+            CLICK_SFX:Play()
             TEXT.text=TEXT.text..action
         end
     end
