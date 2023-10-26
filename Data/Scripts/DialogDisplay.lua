@@ -62,7 +62,7 @@ function PrintText(text,TextBox)
 	DrawText=""
 	CharID=1
 	while CharID<=string.len(text) do
-		if text:sub(CharID,CharID)=="|" or text:sub(CharID,CharID)=="{" then	break	end
+		if text:sub(CharID,CharID)=="|" or text:sub(CharID,CharID)=="{" or text:sub(CharID,CharID)=="}" then	break	end
 		DrawText=DrawText..text:sub(CharID,CharID)
 		CharID=CharID+1
 		TextBox.text=DrawText
@@ -89,7 +89,7 @@ function NextDialogPart()
 	if DialogOptionID==1 then
 		
 		for a=1,string.len(DialogLibrary.context.Dialog[DialogID][DialogPart][1]) do -- check is there any animations in text, if so count number of symbols for animation
-			if DialogLibrary.context.Dialog[DialogID][DialogPart][1]:sub(a,a)=="|" or DialogLibrary.context.Dialog[DialogID][DialogPart][1]:sub(a,a)=="{" then
+			if DialogLibrary.context.Dialog[DialogID][DialogPart][1]:sub(a,a)=="|" or DialogLibrary.context.Dialog[DialogID][DialogPart][1]:sub(a,a)=="{" or DialogLibrary.context.Dialog[DialogID][DialogPart][1]:sub(a,a)=="}" then
 				anim_counter=string.len(DialogLibrary.context.Dialog[DialogID][DialogPart][1]:sub(a,string.len(DialogLibrary.context.Dialog[DialogID][DialogPart][1])))
 				break
 			else
@@ -105,7 +105,14 @@ function NextDialogPart()
 				OnEndDialog()
 			end
 			currentText=DialogLibrary.context.Dialog[DialogID][DialogPart][1]
-				
+			
+			for a=1,string.len(DialogLibrary.context.Dialog[DialogID][DialogPart][1]) do
+				if DialogLibrary.context.Dialog[DialogID][DialogPart][1]:sub(a,a)=="}" then
+					local str=DialogLibrary.context.Dialog[DialogID][DialogPart][1]:sub(a+1,string.len(DialogLibrary.context.Dialog[DialogID][DialogPart][1]))
+					Events.Broadcast(str)
+					break
+				end
+			end
 			ResizePanelBasedOnText(currentText:sub(1,string.len(currentText)-anim_counter))
 			PrintText(currentText,DialogText)
 		else	-- if text is still printing and there isn't any rage event
@@ -341,3 +348,76 @@ function ActionPress(_,action,_)
 	end
 end
 Input.actionPressedEvent:Connect(ActionPress)
+
+local Colors={}
+Colors[44]=Color.New(0.5,0.5,0.5)
+Colors[0]=Color.New(1,1,1)
+Colors[1]=Color.New(1,0,0)
+Colors[2]=Color.New(0.5,1,0)
+Colors[3]=Color.New(0.5,0.5,0)
+Colors[4]=Color.New(1,0.25,0)
+Colors[5]=Color.New(0.25,0.25,0.25)
+Colors[6]=Color.New(0.8,0.12,0)
+Colors[7]=Color.New(0,1,1)
+Colors[8]=Color.New(1,1,0)
+Colors[9]=Color.New(0,1,0)
+Colors[10]=Color.New(1,0.75,0.75)
+Colors[11]=Color.New(0,0.5,1)
+Colors[12]=Color.New(1,1,1)
+
+function TextColor0()
+	DialogText:SetColor(Colors[0])
+end
+Events.Connect("TextColor0",TextColor0)
+function TextColor1()
+	DialogText:SetColor(Colors[1])
+end
+Events.Connect("TextColor1",TextColor1)
+function TextColor2()
+	DialogText:SetColor(Colors[2])
+end
+Events.Connect("TextColor2",TextColor2)
+function TextColor3()
+	DialogText:SetColor(Colors[3])
+end
+Events.Connect("TextColor3",TextColor3)
+function TextColor4()
+	DialogText:SetColor(Colors[4])
+end
+Events.Connect("TextColor4",TextColor4)
+function TextColor5()
+	DialogText:SetColor(Colors[5])
+end
+Events.Connect("TextColor5",TextColor5)
+function TextColor6()
+	DialogText:SetColor(Colors[6])
+end
+Events.Connect("TextColor6",TextColor6)
+function TextColor7()
+	DialogText:SetColor(Colors[7])
+end
+Events.Connect("TextColor7",TextColor7)
+function TextColor8()
+	DialogText:SetColor(Colors[8])
+end
+Events.Connect("TextColor8",TextColor8)
+function TextColor9()
+	DialogText:SetColor(Colors[9])
+end
+Events.Connect("TextColor9",TextColor9)
+function TextColor10()
+	DialogText:SetColor(Colors[10])
+end
+Events.Connect("TextColor10",TextColor10)
+function TextColor11()
+	DialogText:SetColor(Colors[11])
+end
+Events.Connect("TextColor11",TextColor11)
+function TextColor12()
+	DialogText:SetColor(Colors[12])
+end
+Events.Connect("TextColor12",TextColor12)
+function TextColor44()
+	DialogText:SetColor(Colors[44])
+end
+Events.Connect("TextColor44",TextColor44)

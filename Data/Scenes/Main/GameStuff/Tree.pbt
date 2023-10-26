@@ -7191,7 +7191,7 @@ Objects {
     }
     Overrides {
       Name: "cs:WBlocked"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:A"
