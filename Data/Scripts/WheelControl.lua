@@ -19,6 +19,14 @@ local BOLT_SFX = script:GetCustomProperty("BoltSFX"):WaitForObject()
 local SCPANEL_SFX = script:GetCustomProperty("SCPanelSFX"):WaitForObject()
 
 
+function VictoryHotwire()
+    Events.Broadcast("VictoryHotwire")
+
+    Events.Broadcast("BlockMovement",true)
+    Events.Broadcast("StopLooking")
+    Events.Broadcast("ReleaseItem")
+end
+
 ------------------Generating Wires-------------------
 
 --Generating Random Color--
@@ -139,6 +147,7 @@ local WiresConnected=false
 local HoldingWire=nil
 local BatteryConnected=false
 
+
 function InteractionPress(ref)
     local obj=ref:GetObject()
     if obj==BOLT and BOLT:GetCustomProperty("Blocked")==false then
@@ -205,7 +214,7 @@ function InteractionPress(ref)
                     if (HoldingWire.parent:GetCustomProperty("Type")==1 and obj2:GetCustomProperty("Type")==2) or (HoldingWire.parent:GetCustomProperty("Type")==2 and obj2:GetCustomProperty("Type")==1) then
                         if BatteryConnected==true and CutWrongWire==false then
                             WIRES_CONNECT_SFX:Play()
-                            -----------------------------------------------------------------------------------------put victory event here!!!
+                            VictoryHotwire()
                             print("BOOOOOOOOOOOOM") --------------------------------------------------------------------
                             HoldingWire:SetCustomProperty("Blocked",false)
                             HoldingWire=nil
@@ -228,3 +237,4 @@ function BlockInteractions()
     end
 end
 Events.Connect("BlockInteractions",BlockInteractions)
+------------------------------------------------------------------------

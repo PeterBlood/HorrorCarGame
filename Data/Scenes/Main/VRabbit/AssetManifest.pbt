@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16689326704357007895
+  Name: "Japanese Epic Huge Taiko Percussion Ensemble Instrument 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_sampled_taiko_epic_ensemble_ref"
+  }
+}
+Assets {
   Id: 13415011538399733573
   Name: "Squeaky Rusty Reel Wheel Lift Loop 01 SFX"
   PlatformAssetType: 7
@@ -62,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10647091166783143365
+  Name: "Vehicle Car Ignition Short Engine Burst Start 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vehicle_car_ignition_short_engine_burst_start_01_Cue_ref"
+  }
+}
+Assets {
   Id: 10124099706063938514
   Name: "Sci-fi Door Hatch Lock 01 SFX"
   PlatformAssetType: 7
@@ -77,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_rolling_plastic_box_wheel_movement_loop_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 9826001817234083072
+  Name: "Horror Prepared Piano Music Stingers Set 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_horrorPreparedPiano_stingers_ref"
   }
 }
 Assets {
@@ -122,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_advanced_color_grading"
+  }
+}
+Assets {
+  Id: 6741964162461661031
+  Name: "Vehicle Car Rev Backfire 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vehicle_car_rev_backfire_02_Cue_ref"
   }
 }
 Assets {
@@ -203,6 +239,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_ppm_muddyLens"
+  }
+}
+Assets {
+  Id: 1909822895360306962
+  Name: "Creepy Horror Piano Sampled Instrument 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_sampled_creepy_horror_piano_ref"
   }
 }
 Assets {

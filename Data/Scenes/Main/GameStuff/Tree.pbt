@@ -25,6 +25,7 @@ Objects {
   ChildIds: 7489555485432846987
   ChildIds: 16556552573701067899
   ChildIds: 995372096557406383
+  ChildIds: 8284266695140251086
   ChildIds: 11350849103541300872
   ChildIds: 10629936717339057930
   ChildIds: 15290560593152003255
@@ -276,8 +277,48 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 995372096557406383
+  Id: 8284266695140251086
   Name: "KillerActiveSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 15847889720104799649
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 995372096557406383
+  Name: "KillerActive1SFX"
   Transform {
     Location {
     }

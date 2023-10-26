@@ -84,6 +84,7 @@ Assets {
         ChildIds: 17833976521743241298
         ChildIds: 9710380620423612018
         ChildIds: 2684742737437523722
+        ChildIds: 13978475936906295027
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -196,16 +197,36 @@ Assets {
           Overrides {
             Name: "ma:0:Shared_Detail2:color"
             Color {
-              R: 1
               A: 1
             }
           }
           Overrides {
             Name: "ma:0:Shared_Detail1:color"
             Color {
-              R: 0.026
-              G: 0.026
-              B: 0.026
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:0:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:0:Shared_Detail1:id"
+            AssetReference {
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:0:Shared_Detail2:id"
+            AssetReference {
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:0:Shared_BaseMaterial:color"
+            Color {
               A: 1
             }
           }
@@ -419,6 +440,146 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
+        Id: 13978475936906295027
+        Name: "UI Container"
+        Transform {
+          Location {
+            X: 8.5574646
+            Y: -0.734863281
+            Z: 181.109528
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.0558117181
+            Y: 0.0558117181
+            Z: 0.0558117181
+          }
+        }
+        ParentId: 7031106954251158108
+        ChildIds: 18124929265504237471
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Canvas {
+            ContentType {
+              Value: "mc:ecanvascontenttype:dynamic"
+            }
+            Opacity: 1
+            CanvasWorldSize {
+              X: 1024
+              Y: 1024
+            }
+            TickWhenOffScreen: true
+            RedrawTime: 30
+            UseSafeZoneAdjustment: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 18124929265504237471
+        Name: "UI Image"
+        Transform {
+          Location {
+            X: 2194.4585
+            Y: -1679.48804
+            Z: 607.088318
+          }
+          Rotation {
+            Yaw: -23.7198067
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13978475936906295027
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 7550598561086352304
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+            ScreenshotIndex: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
         Id: 14842537755383946794
         Name: "KillerControl"
         Transform {
@@ -467,7 +628,7 @@ Assets {
           Overrides {
             Name: "cs:KillerActiveSFX"
             ObjectReference {
-              SelfId: 995372096557406383
+              SelfId: 8284266695140251086
             }
           }
           Overrides {
@@ -480,6 +641,24 @@ Assets {
             Name: "cs:KillerDistractionSFX"
             ObjectReference {
               SelfId: 10629936717339057930
+            }
+          }
+          Overrides {
+            Name: "cs:UI Container"
+            ObjectReference {
+              SubObjectId: 13978475936906295027
+            }
+          }
+          Overrides {
+            Name: "cs:MainCamera"
+            ObjectReference {
+              SelfId: 3567959178173361743
+            }
+          }
+          Overrides {
+            Name: "cs:ShowFaceSFX"
+            ObjectReference {
+              SelfId: 1018887142378918415
             }
           }
         }
@@ -511,14 +690,14 @@ Assets {
         Transform {
           Location {
             Y: -1.12414551
-            Z: 191.638596
+            Z: 186.432297
           }
           Rotation {
           }
           Scale {
             X: 0.186994642
-            Y: 0.2577613
-            Z: 0.344765663
+            Y: 0.552343845
+            Z: 0.43996346
           }
         }
         ParentId: 13892056665939443788
@@ -580,6 +759,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_invisible_001"
+      }
+    }
+    Assets {
+      Id: 12827530473249900764
+      Name: "Emissive Glow Opaque"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_opaque_emissive"
       }
     }
     Assets {

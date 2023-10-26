@@ -179,6 +179,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15847889720104799649
+  Name: "Creature Ghost Breath 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_ghost_breath_01_Cue_ref"
+  }
+}
+Assets {
   Id: 15714687381745373579
   Name: "Urban Vehicle Car - Body Front 01"
   PlatformAssetType: 1

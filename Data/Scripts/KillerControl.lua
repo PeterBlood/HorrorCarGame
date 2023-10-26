@@ -4,10 +4,13 @@ local DOOR_1 = script:GetCustomProperty("Door1"):WaitForObject()
 local DOOR_2 = script:GetCustomProperty("Door2"):WaitForObject()
 local DOOR_3 = script:GetCustomProperty("Door3"):WaitForObject()
 local DOOR_4 = script:GetCustomProperty("Door4"):WaitForObject()
+local UI_CONTAINER = script:GetCustomProperty("UI Container"):WaitForObject()
+local MAIN_CAMERA = script:GetCustomProperty("MainCamera"):WaitForObject()
 
 local KILLER_ACTIVE_SFX = script:GetCustomProperty("KillerActiveSFX"):WaitForObject()
 local KILLER_WAIT_SFX = script:GetCustomProperty("KillerWaitSFX"):WaitForObject()
 local KILLER_DISTRACTION_SFX = script:GetCustomProperty("KillerDistractionSFX"):WaitForObject()
+local SHOW_FACE_SFX = script:GetCustomProperty("ShowFaceSFX"):WaitForObject()
 
 --[[
     local CAMERA_ID = script:GetCustomProperty("CameraID")
@@ -94,7 +97,7 @@ Phase[4]["PhaseDuration"]=12000
 Phase[4]["PauseDuration"]=120
 
 
-
+UI_CONTAINER:LookAtContinuous(MAIN_CAMERA)
 
 function Hide()
     if CurrentDoorID~=0 then
@@ -111,18 +114,22 @@ end
 function JumpToDoor(ID)
     Hidden=false
     if ID==1 then
+        KILLER:SetRotation(Rotation.New(0,0,0))
         KILLER:SetWorldPosition(DOOR_1:GetWorldPosition()+Vector3.New(-30,140,-393))
         KILLER:MoveTo(DOOR_1:GetWorldPosition()+Vector3.New(-30,140,-93),0.5)
         KILLER:SetCustomProperty("CameraID",1)
     elseif ID==2 then
+        KILLER:SetRotation(Rotation.New(0,0,180))
         KILLER:SetWorldPosition(DOOR_2:GetWorldPosition()+Vector3.New(30,140,-393))
         KILLER:MoveTo(DOOR_2:GetWorldPosition()+Vector3.New(30,140,-93),0.5)
         KILLER:SetCustomProperty("CameraID",2)
     elseif ID==3 then
+        KILLER:SetRotation(Rotation.New(0,0,0))
         KILLER:SetWorldPosition(DOOR_3:GetWorldPosition()+Vector3.New(-30,110,-393))
         KILLER:MoveTo(DOOR_3:GetWorldPosition()+Vector3.New(-30,110,-93),0.5)
         KILLER:SetCustomProperty("CameraID",4)
     elseif ID==4 then
+        KILLER:SetRotation(Rotation.New(0,0,180))
         KILLER:SetWorldPosition(DOOR_4:GetWorldPosition()+Vector3.New(30,110,-393))
         KILLER:MoveTo(DOOR_4:GetWorldPosition()+Vector3.New(30,110,-93),0.5)
         KILLER:SetCustomProperty("CameraID",4)
@@ -264,12 +271,24 @@ end
 function Kill(ID)
     print("AAAAAAAA KILLED")
     Dead=true
+    UI_CONTAINER.opacity=0
+    Task.Wait(0.05)
+    UI_CONTAINER.visibility=Visibility.FORCE_ON
     KILLER.visibility=Visibility.FORCE_OFF
     Events.Broadcast("BlockMovement",true)
     Events.Broadcast("StopLooking")
     Events.Broadcast("ReleaseItem")
     Task.Wait(0.5)
     Events.Broadcast("DoorDeath",ID)
+    --UI_CONTAINER.opacity=0
+    --UI_CONTAINER.visibility=Visibility.FORCE_ON
+    Task.Wait(1)
+    SHOW_FACE_SFX:Play()
+    Task.Wait(0.5)
+    for pr=1,50 do
+        UI_CONTAINER.opacity=(pr*2)/100
+        Task.Wait(0.01)
+    end
 end
 
 function Tick()
@@ -284,6 +303,7 @@ function Tick()
         end
     elseif time()>NextPhase then
         if Stunned==false then
+            KILLER_ACTIVE_SFX.pitch=-500+math.random(800)
             KILLER_ACTIVE_SFX:Play()
         end
         AdvancePhase()
@@ -348,3 +368,9 @@ function ElectrocutionDeath()
     KILLER.visibility=Visibility.FORCE_OFF
 end
 Events.Connect("ElectrocutionDeath",ElectrocutionDeath)
+
+function VictoryHotwire()
+    Dead=true
+    KILLER.visibility=Visibility.FORCE_OFF
+end
+Events.Connect("VictoryHotwire",VictoryHotwire)

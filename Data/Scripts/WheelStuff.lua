@@ -13,10 +13,48 @@ local UpdateWiperMode=false
 local BlockWiperMode=false
 local HeadlightsMode=0   -- 0- Off / 1- Close / 2- Far
 
+local WipersPlay=false
+
+local Speed,W1,W2=0.4,0.5,0.5
+function WipersLoop()
+    while true do
+        if WiperMode==0 then Task.Wait(0.2) 
+        else
+            --WHIPERS_SFX:Stop()
+            --WHIPERS_SFX:Play()
+            WIPER_1:StopRotate()
+            WIPER_1:RotateTo(Rotation.New(0,0,0),Speed,true)
+            WIPER_2:StopRotate()
+            WIPER_2:RotateTo(Rotation.New(4.658,0.408,20.348),Speed,true)
+            Task.Wait(W1)--1.2
+            WHIPERS_SFX:Stop()
+            WHIPERS_SFX:Play()
+            WIPER_1:StopRotate()
+            WIPER_1:RotateTo(Rotation.New(78.641,77.981,116.558),Speed,true)
+            WIPER_2:StopRotate()
+            WIPER_2:RotateTo(Rotation.New(59.945,78.014,124.626),Speed,true)
+            Task.Wait(W2)--2.2
+        end
+    end
+end
+
 function ChangeWipersMode()
     LEAVER_CLICK_SFX:Play()
     local mode=WiperMode+1
     if mode>2 then  mode=0  end
+
+    Speed=1
+    W1=1.2
+    W2=2.2
+    if mode==2 then
+        Speed,W1,W2=0.4,0.5,0.5
+    end
+    WiperMode=mode
+    if WipersPlay==false then
+        WipersPlay=true
+        WipersLoop()
+    end
+    --[[
     if BlockWiperMode==true or mode==WiperMode then return end
     UpdateWiperMode=true
     BlockWiperMode=true
@@ -51,7 +89,7 @@ function ChangeWipersMode()
         if UpdateWiperMode==true then UpdateWiperMode=false return end
         Task.Wait(W2)--2.2
         if UpdateWiperMode==true then UpdateWiperMode=false return end
-    end
+    end]]
 end
 Events.Connect("ChangeWipersMode",ChangeWipersMode)
 

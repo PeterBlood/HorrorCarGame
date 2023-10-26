@@ -13,6 +13,10 @@ local ELECTROCUTED_CAM = script:GetCustomProperty("ElectrocutedCam"):WaitForObje
 local ELECTROCUTION_SFX = script:GetCustomProperty("ElectrocutionSFX"):WaitForObject()
 local ELECTR_POST_PROCESS = script:GetCustomProperty("ElectrPostProcess"):WaitForObject()
 local SPARK_VFX = script:GetCustomProperty("SparkVFX"):WaitForObject()
+local HANDS_SFX = script:GetCustomProperty("HandsSFX"):WaitForObject()
+local BLACK_SCREEN = script:GetCustomProperty("BlackScreen"):WaitForObject()
+local DOOR_OPEN_SFX = script:GetCustomProperty("DoorOpenSFX"):WaitForObject()
+local OUTSIDE_AMBIENCE_SFX = script:GetCustomProperty("OutsideAmbienceSFX"):WaitForObject()
 
 
 
@@ -34,7 +38,7 @@ function DoorDeath(ID)
     else
         Door:SetRotation(Rotation.New(0,0,-90))
     end
-
+    --DOOR_OPEN_SFX:Play()
     MAIN_CAMERA:SetWorldRotation(Game.GetLocalPlayer():GetViewWorldRotation())
     MAIN_CAMERA.hasFreeControl=false
     MAIN_CAMERA:StopMove()
@@ -48,14 +52,24 @@ function DoorDeath(ID)
     end
     MAIN_CAMERA:MoveTo(cam:GetWorldPosition(),0.75)
     MAIN_CAMERA:RotateTo(cam:GetWorldRotation(),0.75)
-    Task.Wait(0.5)
-    Game.GetLocalPlayer():SetDefaultCamera(CAMERA)
     Show=true
-    Task.Wait(0.25)
-    HUMANOID_1_RIG:PlayAnimation("unarmed_boo", {startPosition=0.1,playbackRate=0.1})
+    for pr=1,50 do
+        OUTSIDE_AMBIENCE_SFX.volume=1-(pr/50)
+        Task.Wait(0.01)
+    end
+    --Task.Wait(0.5)
+    Game.GetLocalPlayer():SetDefaultCamera(CAMERA)
+    Task.Wait(3.25)
+    --[[HUMANOID_1_RIG:PlayAnimation("unarmed_boo", {startPosition=0.1,playbackRate=0.1})
     Task.Wait(1.0)
     HUMANOID_1_RIG.visibility=Visibility.INHERIT
-    Task.Wait(3)
+    Task.Wait(3)]]--slowerAnimation
+    HUMANOID_1_RIG:PlayAnimation("unarmed_boo", {startPosition=0.1,playbackRate=0.5})
+    Task.Wait(0.2)
+    HANDS_SFX:Play()
+    HUMANOID_1_RIG.visibility=Visibility.INHERIT
+    Task.Wait(0.9)
+    BLACK_SCREEN.visibility=Visibility.FORCE_ON
     HUMANOID_1_RIG.visibility=Visibility.FORCE_OFF
 end
 Events.Connect("DoorDeath",DoorDeath)
@@ -70,6 +84,12 @@ function ElectrocutionDeath()
     ELECTROCUTION_SFX:Play()
     ELECTR_POST_PROCESS.visibility=Visibility.FORCE_ON
     SPARK_VFX:Play()
+    BLACK_SCREEN.opacity=0
+    BLACK_SCREEN.visibility=Visibility.FORCE_ON
+    for pr=1,100 do
+        BLACK_SCREEN.opacity=pr/100
+        Task.Wait(0.04)
+    end
 end
 Events.Connect("ElectrocutionDeath",ElectrocutionDeath)
 --[[
