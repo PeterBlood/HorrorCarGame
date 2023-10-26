@@ -16,6 +16,7 @@ local BATTERY = script:GetCustomProperty("Battery"):WaitForObject()
 local STARTER = script:GetCustomProperty("Starter"):WaitForObject()
 local WIRE_3 = script:GetCustomProperty("Wire3"):WaitForObject()
 local WIRE_4 = script:GetCustomProperty("Wire4"):WaitForObject()
+local PAPER_LOOK_SFX = script:GetCustomProperty("PaperLookSFX"):WaitForObject()
 
 local Holding=false
 
@@ -74,6 +75,7 @@ end
 Events.Connect("PickedItem",PickedItem)
 function LookAtItem(Look)
     if Holding==true and Look==true then
+        PAPER_LOOK_SFX:Play()
         UpdateUI()
     end
 end

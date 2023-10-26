@@ -13,6 +13,12 @@ local SCPANEL = script:GetCustomProperty("SCPanel"):WaitForObject()
 local WIRES = script:GetCustomProperty("Wires"):WaitForObject()
 local CONNECT = script:GetCustomProperty("Connect"):WaitForObject()
 
+local WIRES_CUT_SFX = script:GetCustomProperty("WiresCutSFX"):WaitForObject()
+local WIRES_CONNECT_SFX = script:GetCustomProperty("WiresConnectSFX"):WaitForObject()
+local BOLT_SFX = script:GetCustomProperty("BoltSFX"):WaitForObject()
+local SCPANEL_SFX = script:GetCustomProperty("SCPanelSFX"):WaitForObject()
+
+
 ------------------Generating Wires-------------------
 
 --Generating Random Color--
@@ -136,11 +142,13 @@ local BatteryConnected=false
 function InteractionPress(ref)
     local obj=ref:GetObject()
     if obj==BOLT and BOLT:GetCustomProperty("Blocked")==false then
+        BOLT_SFX:Play()
         BOLT.visibility=Visibility.FORCE_OFF
         BOLT:SetCustomProperty("Blocked",true)
         SCPANEL:SetCustomProperty("Blocked",false)
     end
     if obj==SCPANEL and SCPANEL:GetCustomProperty("Blocked")==false then
+        SCPANEL_SFX:Play()
         SCPANEL.visibility=Visibility.FORCE_OFF
         SCPANEL:SetCustomProperty("Blocked",true)
         for _,obj2 in pairs(WIRES:GetChildren()) do
@@ -155,6 +163,7 @@ function InteractionPress(ref)
             if obj2:GetCustomProperty("Type")>2 then
                 CutWrongWire=true
             end
+            WIRES_CUT_SFX:Play()
             obj2:GetCustomProperty("Cut"):WaitForObject():SetCustomProperty("Blocked",false)
             obj2:GetCustomProperty("Cut"):WaitForObject().visibility=Visibility.FORCE_ON
         end
@@ -163,8 +172,12 @@ function InteractionPress(ref)
         local Cut=obj2:GetCustomProperty("Cut"):WaitForObject()
         if obj==Cut then
             if _G.PlayerEquipment.Gloves==0 and obj2:GetCustomProperty("Type")==1 then
-                -----------------------------------------------------------------------------------------put electricution death event here!!!
-                print("BZZZZZZ DEAD") --------------------------------------------------------------------
+                Events.Broadcast("BlockMovement",true)
+                Events.Broadcast("StopLooking")
+                Events.Broadcast("ReleaseItem")
+                Task.Wait(0.1)
+                Events.Broadcast("ElectrocutionDeath")
+                --print("BZZZZZZ DEAD")
                 return
             end
             if HoldingWire==nil then
@@ -176,6 +189,7 @@ function InteractionPress(ref)
                 if WiresConnected==false then
                     if HoldingWire.parent:GetCustomProperty("Type")==1 and obj2:GetCustomProperty("Type")==1 then
                         BatteryConnected=true
+                        WIRES_CONNECT_SFX:Play()
                     end
                     WiresConnected=true
                     local StartPos = HoldingWire:GetCustomProperty("PosA"):WaitForObject():GetWorldPosition()
@@ -190,6 +204,7 @@ function InteractionPress(ref)
                 else
                     if (HoldingWire.parent:GetCustomProperty("Type")==1 and obj2:GetCustomProperty("Type")==2) or (HoldingWire.parent:GetCustomProperty("Type")==2 and obj2:GetCustomProperty("Type")==1) then
                         if BatteryConnected==true and CutWrongWire==false then
+                            WIRES_CONNECT_SFX:Play()
                             -----------------------------------------------------------------------------------------put victory event here!!!
                             print("BOOOOOOOOOOOOM") --------------------------------------------------------------------
                             HoldingWire:SetCustomProperty("Blocked",false)

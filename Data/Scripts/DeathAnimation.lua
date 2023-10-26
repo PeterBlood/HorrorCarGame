@@ -9,6 +9,12 @@ local DOOR_2 = script:GetCustomProperty("Door2"):WaitForObject()
 local DOOR_3 = script:GetCustomProperty("Door3"):WaitForObject()
 local DOOR_4 = script:GetCustomProperty("Door4"):WaitForObject()
 
+local ELECTROCUTED_CAM = script:GetCustomProperty("ElectrocutedCam"):WaitForObject()
+local ELECTROCUTION_SFX = script:GetCustomProperty("ElectrocutionSFX"):WaitForObject()
+local ELECTR_POST_PROCESS = script:GetCustomProperty("ElectrPostProcess"):WaitForObject()
+local SPARK_VFX = script:GetCustomProperty("SparkVFX"):WaitForObject()
+
+
 
 local Show=false
 Task.Wait(3)
@@ -40,9 +46,9 @@ function DoorDeath(ID)
             break
         end
     end
-    MAIN_CAMERA:MoveTo(cam:GetWorldPosition(),0.5)
-    MAIN_CAMERA:RotateTo(cam:GetWorldRotation(),0.5)
-    Task.Wait(0.25)
+    MAIN_CAMERA:MoveTo(cam:GetWorldPosition(),0.75)
+    MAIN_CAMERA:RotateTo(cam:GetWorldRotation(),0.75)
+    Task.Wait(0.5)
     Game.GetLocalPlayer():SetDefaultCamera(CAMERA)
     Show=true
     Task.Wait(0.25)
@@ -53,6 +59,19 @@ function DoorDeath(ID)
     HUMANOID_1_RIG.visibility=Visibility.FORCE_OFF
 end
 Events.Connect("DoorDeath",DoorDeath)
+
+function ElectrocutionDeath()
+    MAIN_CAMERA:SetWorldRotation(Game.GetLocalPlayer():GetViewWorldRotation())
+    MAIN_CAMERA.hasFreeControl=false
+    MAIN_CAMERA:StopMove()
+    MAIN_CAMERA:StopRotate()
+    MAIN_CAMERA:MoveTo(ELECTROCUTED_CAM:GetWorldPosition(),0.3)
+    MAIN_CAMERA:RotateTo(ELECTROCUTED_CAM:GetWorldRotation(),0.3)
+    ELECTROCUTION_SFX:Play()
+    ELECTR_POST_PROCESS.visibility=Visibility.FORCE_ON
+    SPARK_VFX:Play()
+end
+Events.Connect("ElectrocutionDeath",ElectrocutionDeath)
 --[[
 function Press(_,action,_)
     if action=="0" then

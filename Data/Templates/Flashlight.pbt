@@ -15,10 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7345491780355375106
+        ParentId: 4781671109827199097
         ChildIds: 12528926677669870538
         ChildIds: 12890307879266478211
         ChildIds: 9313048050235404499
+        ChildIds: 13148802963543060651
         UnregisteredParameters {
           Overrides {
             Name: "cs:DefPos"
@@ -2916,6 +2917,12 @@ Assets {
               SubObjectId: 8970989771757050825
             }
           }
+          Overrides {
+            Name: "cs:UseSFX"
+            ObjectReference {
+              SubObjectId: 13148802963543060651
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -2934,6 +2941,47 @@ Assets {
           ScriptAsset {
             Id: 9192539366789280432
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 13148802963543060651
+        Name: "UseSFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13067627822428563272
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 9020055930812129745
+          }
+          Volume: 0.5
+          Falloff: -1
+          Radius: -1
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -3110,6 +3158,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pipe_eightsided_002"
+      }
+    }
+    Assets {
+      Id: 9020055930812129745
+      Name: "Electricity Neon Light Humming Buzzing Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_electricity_neon_light_humming_buzzing_loop_01_Cue_ref"
       }
     }
     PrimaryAssetId {

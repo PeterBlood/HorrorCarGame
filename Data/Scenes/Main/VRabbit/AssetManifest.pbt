@@ -1,4 +1,13 @@
 Assets {
+  Id: 17731889627563964846
+  Name: "Spark Explosion VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_spark_explosion"
+  }
+}
+Assets {
   Id: 16995563670198642379
   Name: "Humanoid 1 Core Shirt"
   PlatformAssetType: 26
@@ -80,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8570133166349024324
+  Name: "Heavy Mechanical Door Airlock Pneumatic 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_heavy_mechanical_door_airlock_02_Cue_ref"
+  }
+}
+Assets {
   Id: 7562272315664860778
   Name: "Humanoid 1 Viper Pants"
   PlatformAssetType: 26
@@ -125,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4894274961891451701
+  Name: "Dark Cave Monster Horror Distant Growl 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_dark_cave_monster_horror_distant_growl_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 4313734527126590758
   Name: "Sports Skateboard Wheel Spin Loop 01 SFX"
   PlatformAssetType: 7
@@ -134,12 +161,21 @@ Assets {
   }
 }
 Assets {
-  Id: 4198131417365230488
-  Name: "Vehicle Plastic Switch Panel Button Click 03 SFX"
+  Id: 4160669001616705185
+  Name: "Radial Blur Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_ppm_radial_blur"
+  }
+}
+Assets {
+  Id: 3721918567663868281
+  Name: "Vehicle Turn Signal Blinker Light Single B 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
-    AssetId: "sfx_vehicle_plastic_switch_panel_button_click_03a_Cue_ref"
+    AssetId: "sfx_vehicle_turn_signal_blinker_light_single_b_01_Cue_ref"
   }
 }
 Assets {

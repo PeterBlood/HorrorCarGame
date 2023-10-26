@@ -20,6 +20,7 @@ Assets {
         ChildIds: 16775628550951813725
         ChildIds: 290621879641475341
         ChildIds: 8551080647833263312
+        ChildIds: 13963167682929417026
         UnregisteredParameters {
           Overrides {
             Name: "cs:DefPos"
@@ -2537,6 +2538,12 @@ Assets {
               SubObjectId: 17254725815584099734
             }
           }
+          Overrides {
+            Name: "cs:PaperLookSFX"
+            ObjectReference {
+              SubObjectId: 13963167682929417026
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -2555,6 +2562,47 @@ Assets {
           ScriptAsset {
             Id: 17798290312114445351
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 13963167682929417026
+        Name: "PaperLookSFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17254725815584099734
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 762613810994025292
+          }
+          Volume: 0.4
+          Falloff: -1
+          Radius: -1
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2632,6 +2680,15 @@ Assets {
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "CabinBold_ref"
+      }
+    }
+    Assets {
+      Id: 762613810994025292
+      Name: "Paper Book Open Close Page Fast 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_paper_book_open_close_page_fast_01_Cue_ref"
       }
     }
     PrimaryAssetId {

@@ -1,6 +1,738 @@
 Name: "GameStuff"
 RootId: 35699749381870200
 Objects {
+  Id: 7932769824600727499
+  Name: "Audio"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 35699749381870200
+  ChildIds: 13000429410130777912
+  ChildIds: 16616279683480457776
+  ChildIds: 13558631035124816513
+  ChildIds: 7310135601258705764
+  ChildIds: 11045637387743198282
+  ChildIds: 17620503735510373918
+  ChildIds: 12001326163829044734
+  ChildIds: 7489555485432846987
+  ChildIds: 16556552573701067899
+  ChildIds: 995372096557406383
+  ChildIds: 11350849103541300872
+  ChildIds: 10629936717339057930
+  ChildIds: 15290560593152003255
+  ChildIds: 1970823044982080272
+  ChildIds: 18175075777649497249
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+    IsAllowedForPC: true
+    IsAllowedForMobile: true
+    IsAllowedForLowMemoryMobile: true
+    PCMinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    PCMaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
+    MobileMinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MobileMaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 18175075777649497249
+  Name: "BoltSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 7379614950691093311
+    }
+    Pitch: 200
+    Volume: 0.4
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 1970823044982080272
+  Name: "SCPanelSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 17502059183620981942
+    }
+    Volume: 0.4
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15290560593152003255
+  Name: "Creature Owl Hooting 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 6443071759541659116
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 10629936717339057930
+  Name: "KillerDistractionSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 4773397885257877368
+    }
+    Volume: 0.8
+    Falloff: -1
+    Radius: -1
+    FadeInTime: 0.1
+    StartTime: 0.5
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 11350849103541300872
+  Name: "KillerWaitSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10022100894324931865
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Pitch: -300
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+    }
+  }
+  Relevance {
+    Value: "mc:edistancerelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 995372096557406383
+  Name: "KillerActiveSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 17055639470500927299
+    }
+    Volume: 0.6
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 16556552573701067899
+  Name: "ElectrocutionSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3173404547491986
+    }
+    Volume: 2
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 7489555485432846987
+  Name: "WiresConnectSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 13613473490472746230
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 12001326163829044734
+  Name: "WiresCutSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 18377676435669892575
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 17620503735510373918
+  Name: "PickSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 4456246394385036677
+    }
+    Volume: 0.4
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 11045637387743198282
+  Name: "BatteriesSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16431512364687164021
+    }
+    Volume: 0.4
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 7310135601258705764
+  Name: "GlovesSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 2908011939222192120
+    }
+    Volume: 0.3
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 13558631035124816513
+  Name: "SoundControl"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:AmbienceSFX"
+      ObjectReference {
+        SelfId: 13000429410130777912
+      }
+    }
+    Overrides {
+      Name: "cs:MainCamera"
+      ObjectReference {
+        SelfId: 3567959178173361743
+      }
+    }
+    Overrides {
+      Name: "cs:Door1"
+      ObjectReference {
+        SelfId: 6462591423926839554
+      }
+    }
+    Overrides {
+      Name: "cs:Door2"
+      ObjectReference {
+        SelfId: 8140621020259267198
+      }
+    }
+    Overrides {
+      Name: "cs:Door3"
+      ObjectReference {
+        SelfId: 4747163113793446496
+      }
+    }
+    Overrides {
+      Name: "cs:Door4"
+      ObjectReference {
+        SelfId: 12345613329173169625
+      }
+    }
+    Overrides {
+      Name: "cs:OutsideAmbienceSFX"
+      ObjectReference {
+        SelfId: 16616279683480457776
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4110665636031366003
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 16616279683480457776
+  Name: "OutsideAmbienceSFX"
+  Transform {
+    Location {
+      X: -654
+      Y: 159
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16622944718023322083
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: 3000
+    IsSpatializationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 13000429410130777912
+  Name: "AmbienceSFX"
+  Transform {
+    Location {
+      X: -654
+      Y: 159
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16622944718023322083
+    }
+    AutoPlay: true
+    Repeat: true
+    Pitch: -1000
+    Volume: 0.4
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 1274208411890889069
   Name: "Dialog System"
   Transform {
@@ -2039,6 +2771,24 @@ Objects {
       Name: "cs:MovementControl"
       ObjectReference {
         SelfId: 5981572956201102382
+      }
+    }
+    Overrides {
+      Name: "cs:GlovesSFX"
+      ObjectReference {
+        SelfId: 7310135601258705764
+      }
+    }
+    Overrides {
+      Name: "cs:BatteriesSFX"
+      ObjectReference {
+        SelfId: 11045637387743198282
+      }
+    }
+    Overrides {
+      Name: "cs:PickSFX"
+      ObjectReference {
+        SelfId: 17620503735510373918
       }
     }
   }
@@ -4307,6 +5057,7 @@ Objects {
   ChildIds: 13693004009956782534
   ChildIds: 10642498824332749495
   ChildIds: 5981572956201102382
+  ChildIds: 6967710692128231912
   ChildIds: 3567959178173361743
   ChildIds: 11588563302349693090
   Collidable_v2 {
@@ -5073,7 +5824,122 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
+    UseAsAudioListener: true
     IsCameraCollisionEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 6967710692128231912
+  Name: "ElectrocutedCam"
+  Transform {
+    Location {
+      X: -345.50943
+      Y: 416.054321
+      Z: 149.384048
+    }
+    Rotation {
+      Pitch: 50.5707741
+      Yaw: -76.9300842
+      Roll: 10.6133566
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13283165610152004226
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:W"
+      Int: 8
+    }
+    Overrides {
+      Name: "cs:WBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:A"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:ABlocked"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:S"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:SBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:D"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:DBlocked"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:MaxPitch"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:MaxYaw"
+      Int: 360
+    }
+    Overrides {
+      Name: "cs:WBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ABlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:SBlocked:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:DBlocked:isrep"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Camera {
+    MinDistance: 50
+    MaxDistance: 1200
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+    AudioListenerOffset {
+    }
+    EnablePictureInPicture: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -13408,6 +14274,8 @@ Objects {
   ChildIds: 7256590037386662780
   ChildIds: 15764083974856407578
   ChildIds: 17175050216304934046
+  ChildIds: 6410030371285934845
+  ChildIds: 12745764379812172526
   ChildIds: 17038406455462369968
   ChildIds: 12746299643193302324
   ChildIds: 3847464031161428463
@@ -13685,6 +14553,98 @@ Objects {
   }
 }
 Objects {
+  Id: 12745764379812172526
+  Name: "WhipersSFX"
+  Transform {
+    Location {
+      X: -270
+      Y: 215
+      Z: 188
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2391263011315130328
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 9508369683182150641
+    }
+    Pitch: -2400
+    Volume: 0.4
+    Falloff: 500
+    Radius: 10
+    FadeInTime: 0.1
+    FadeOutTime: 0.1
+    IsAttenuationEnabled: true
+    StopTime: 0.5
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 6410030371285934845
+  Name: "LeaverClickSFX"
+  Transform {
+    Location {
+      X: -374
+      Y: 292
+      Z: 151
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2391263011315130328
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 4198131417365230488
+    }
+    Volume: 0.4
+    Falloff: -1
+    Radius: 100
+    IsSpatializationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 17175050216304934046
   Name: "WheelStuff"
   Transform {
@@ -13734,6 +14694,18 @@ Objects {
       Name: "cs:WindshieldsSwitch"
       ObjectReference {
         SelfId: 13227232451125440640
+      }
+    }
+    Overrides {
+      Name: "cs:LeaverClickSFX"
+      ObjectReference {
+        SelfId: 6410030371285934845
+      }
+    }
+    Overrides {
+      Name: "cs:WhipersSFX"
+      ObjectReference {
+        SelfId: 12745764379812172526
       }
     }
   }
@@ -14913,7 +15885,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16480,6 +17452,30 @@ Objects {
       Name: "cs:ConnectDot"
       ObjectReference {
         SelfId: 2583612317511051299
+      }
+    }
+    Overrides {
+      Name: "cs:WiresCutSFX"
+      ObjectReference {
+        SelfId: 12001326163829044734
+      }
+    }
+    Overrides {
+      Name: "cs:WiresConnectSFX"
+      ObjectReference {
+        SelfId: 7489555485432846987
+      }
+    }
+    Overrides {
+      Name: "cs:BoltSFX"
+      ObjectReference {
+        SelfId: 18175075777649497249
+      }
+    }
+    Overrides {
+      Name: "cs:SCPanelSFX"
+      ObjectReference {
+        SelfId: 1970823044982080272
       }
     }
   }
@@ -18885,6 +19881,9 @@ Objects {
   ChildIds: 2328508215094569716
   ChildIds: 12723404949441986686
   ChildIds: 5431651686188819463
+  ChildIds: 5064020466166004067
+  ChildIds: 17101676295499531077
+  ChildIds: 4500765387003581103
   UnregisteredParameters {
     Overrides {
       Name: "cs:Lock"
@@ -18925,6 +19924,145 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 4500765387003581103
+  Name: "LockSFX"
+  Transform {
+    Location {
+      X: -32.723938
+      Y: 146.813904
+      Z: 60.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12345613329173169625
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 10124099706063938514
+    }
+    Pitch: 800
+    Volume: 0.7
+    Falloff: -1
+    Radius: 100
+    StartTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 17101676295499531077
+  Name: "DoorCloseSFX"
+  Transform {
+    Location {
+      X: -39.723938
+      Y: 151.813904
+      Z: 30.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12345613329173169625
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 2621482017367696168
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 5064020466166004067
+  Name: "DoorOpenSFX"
+  Transform {
+    Location {
+      X: -39.723938
+      Y: 151.813904
+      Z: 30.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12345613329173169625
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 1275878060699046961
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    FadeOutTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+    StopTime: 0.32
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -18986,6 +20124,24 @@ Objects {
       Name: "cs:Window"
       ObjectReference {
         SelfId: 12723404949441986686
+      }
+    }
+    Overrides {
+      Name: "cs:DoorOpenSFX"
+      ObjectReference {
+        SelfId: 5064020466166004067
+      }
+    }
+    Overrides {
+      Name: "cs:DoorCloseSFX"
+      ObjectReference {
+        SelfId: 17101676295499531077
+      }
+    }
+    Overrides {
+      Name: "cs:LockSFX"
+      ObjectReference {
+        SelfId: 4500765387003581103
       }
     }
   }
@@ -20323,6 +21479,9 @@ Objects {
   ChildIds: 15865638812827599726
   ChildIds: 12146357210195247936
   ChildIds: 11862266794422692544
+  ChildIds: 17196528616672232544
+  ChildIds: 17745653054004268671
+  ChildIds: 15580813630685988055
   UnregisteredParameters {
     Overrides {
       Name: "cs:Lock"
@@ -20363,6 +21522,145 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15580813630685988055
+  Name: "LockSFX"
+  Transform {
+    Location {
+      X: -28.2434692
+      Y: 148.813904
+      Z: 60.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4747163113793446496
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 10124099706063938514
+    }
+    Pitch: 800
+    Volume: 0.7
+    Falloff: -1
+    Radius: 100
+    StartTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 17745653054004268671
+  Name: "DoorOpenSFX"
+  Transform {
+    Location {
+      X: -27.2434692
+      Y: 153.813904
+      Z: 30.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4747163113793446496
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 1275878060699046961
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    FadeOutTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+    StopTime: 0.32
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 17196528616672232544
+  Name: "DoorCloseSFX"
+  Transform {
+    Location {
+      X: -27.2434692
+      Y: 153.813904
+      Z: 30.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4747163113793446496
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 2621482017367696168
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -20424,6 +21722,24 @@ Objects {
       Name: "cs:Window"
       ObjectReference {
         SelfId: 12146357210195247936
+      }
+    }
+    Overrides {
+      Name: "cs:DoorCloseSFX"
+      ObjectReference {
+        SelfId: 17196528616672232544
+      }
+    }
+    Overrides {
+      Name: "cs:DoorOpenSFX"
+      ObjectReference {
+        SelfId: 17745653054004268671
+      }
+    }
+    Overrides {
+      Name: "cs:LockSFX"
+      ObjectReference {
+        SelfId: 15580813630685988055
       }
     }
   }
@@ -21761,6 +23077,9 @@ Objects {
   ChildIds: 3259335634413068722
   ChildIds: 16091368265387818082
   ChildIds: 15706718358391386677
+  ChildIds: 4417317962434171857
+  ChildIds: 17258299106091082565
+  ChildIds: 15383939800339120670
   UnregisteredParameters {
     Overrides {
       Name: "cs:Lock"
@@ -21801,6 +23120,145 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15383939800339120670
+  Name: "DoorCloseSFX"
+  Transform {
+    Location {
+      X: -44
+      Y: 155.60791
+      Z: 30.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8140621020259267198
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 2621482017367696168
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 17258299106091082565
+  Name: "DoorOpenSFX"
+  Transform {
+    Location {
+      X: -44
+      Y: 155.60791
+      Z: 30.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8140621020259267198
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 1275878060699046961
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    FadeOutTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+    StopTime: 0.32
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 4417317962434171857
+  Name: "LockSFX"
+  Transform {
+    Location {
+      X: -37
+      Y: 150.60791
+      Z: 60.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8140621020259267198
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 10124099706063938514
+    }
+    Pitch: 800
+    Volume: 0.7
+    Falloff: -1
+    Radius: 100
+    StartTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -21861,6 +23319,24 @@ Objects {
       Name: "cs:Window"
       ObjectReference {
         SelfId: 16091368265387818082
+      }
+    }
+    Overrides {
+      Name: "cs:LockSFX"
+      ObjectReference {
+        SelfId: 4417317962434171857
+      }
+    }
+    Overrides {
+      Name: "cs:DoorOpenSFX"
+      ObjectReference {
+        SelfId: 17258299106091082565
+      }
+    }
+    Overrides {
+      Name: "cs:DoorCloseSFX"
+      ObjectReference {
+        SelfId: 15383939800339120670
       }
     }
   }
@@ -23350,6 +24826,9 @@ Objects {
   ChildIds: 14770335275280363597
   ChildIds: 14686108763124474430
   ChildIds: 13899233589040589946
+  ChildIds: 11128965548103501978
+  ChildIds: 7667373109316254717
+  ChildIds: 11222739490980040057
   UnregisteredParameters {
     Overrides {
       Name: "cs:Lock"
@@ -23390,6 +24869,145 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 11222739490980040057
+  Name: "DoorCloseSFX"
+  Transform {
+    Location {
+      X: -31.8460083
+      Y: 155.60791
+      Z: 30.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6462591423926839554
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 2621482017367696168
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 7667373109316254717
+  Name: "DoorOpenSFX"
+  Transform {
+    Location {
+      X: -31.8460083
+      Y: 155.60791
+      Z: 30.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6462591423926839554
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 1275878060699046961
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    FadeOutTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+    StopTime: 0.32
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 11128965548103501978
+  Name: "LockSFX"
+  Transform {
+    Location {
+      X: -32.8460083
+      Y: 150.60791
+      Z: 60.0253
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6462591423926839554
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 10124099706063938514
+    }
+    Pitch: 800
+    Volume: 0.7
+    Falloff: -1
+    Radius: 100
+    StartTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -23526,6 +25144,24 @@ Objects {
       Name: "cs:Window"
       ObjectReference {
         SelfId: 13899233589040589946
+      }
+    }
+    Overrides {
+      Name: "cs:LockSFX"
+      ObjectReference {
+        SelfId: 11128965548103501978
+      }
+    }
+    Overrides {
+      Name: "cs:DoorOpenSFX"
+      ObjectReference {
+        SelfId: 7667373109316254717
+      }
+    }
+    Overrides {
+      Name: "cs:DoorCloseSFX"
+      ObjectReference {
+        SelfId: 11222739490980040057
       }
     }
   }
@@ -53787,6 +55423,7 @@ Objects {
   ChildIds: 13551641546322277000
   ChildIds: 7155168770677928712
   ChildIds: 10505154200474359396
+  ChildIds: 6658420309027559399
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -53807,15 +55444,86 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
+  Id: 6658420309027559399
+  Name: "Star Dome"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10005074784157121906
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Real Stars"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Star Brightness"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Star Color Cycle"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Star Color Intensity"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Color Gradient"
+      Enum {
+        Value: "mc:ecolorgradients:7"
+      }
+    }
+    Overrides {
+      Name: "bp:Space Tint"
+      Color {
+        G: 1
+        B: 0.900000095
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12344193518355455075
+    }
+    TeamSettings {
+    }
+  }
+  Relevance {
+    Value: "mc:edistancerelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 10505154200474359396
   Name: "Sun Light"
   Transform {
     Location {
     }
     Rotation {
-      Pitch: -28.7033691
-      Yaw: -124.505836
-      Roll: 1.31280565
+      Pitch: -136.778534
+      Yaw: 179.722687
+      Roll: 45.1227417
     }
     Scale {
       X: 1
@@ -53832,23 +55540,22 @@ Objects {
     Overrides {
       Name: "bp:Light Color"
       Color {
-        R: 1
-        G: 0.955973327
-        B: 0.73791039
         A: 1
       }
     }
     Overrides {
       Name: "bp:Shape"
-      Int: 1
+      Enum {
+        Value: "mc:esundiscshapes:5"
+      }
     }
     Overrides {
       Name: "bp:Size"
-      Float: 5
+      Float: 10
     }
     Overrides {
       Name: "bp:Light Shaft Bloom"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Cast Volumetric Shadows"
@@ -53860,14 +55567,14 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 3.5
+      Float: 0
     }
     Overrides {
       Name: "bp:Sun Disc Color"
       Color {
-        R: 3
-        G: 3
-        B: 3
+        R: 65
+        G: 76.6666641
+        B: 100
         A: 1
       }
     }
@@ -53881,7 +55588,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Light Shaft Occlusion"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Light Shaft Bloom Tint"
@@ -53892,12 +55599,60 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Indirect Lighting Intensity"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Volumetric Intensity"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:Shadow Cascade Count"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Dynamic Shadow Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cascade Distribution Adjustment"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Shadow Bias"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance Fadeout Percentage"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Soft Distance Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Distance Field Shadow Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance Field Shadow Trace Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Shadow Amount"
+      Float: 0
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54023,27 +55778,15 @@ Objects {
     Overrides {
       Name: "bp:Zenith Color"
       Color {
-        R: 0.0243181027
-        G: 0.0633459464
-        B: 0.212230757
+        R: 0.00870833267
+        G: 0.0244097076
+        B: 0.076000005
         A: 0.886000037
-      }
-    }
-    Overrides {
-      Name: "bp:Horizon Color"
-      Color {
-        R: 0.489468127
-        G: 0.480969489
-        B: 0.623960376
-        A: 0.895000041
       }
     }
     Overrides {
       Name: "bp:Haze Color"
       Color {
-        R: 0.590618849
-        G: 0.590618849
-        B: 0.701101899
         A: 1
       }
     }
@@ -54053,15 +55796,15 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Ambient Brightness"
-      Float: 3
+      Float: 0
     }
     Overrides {
       Name: "bp:Cloud Rim Brightness"
-      Float: 50
+      Float: 2
     }
     Overrides {
       Name: "bp:Cloud Opacity"
-      Float: 0
+      Float: 1
     }
     Overrides {
       Name: "bp:Cloud Ambient Color"
@@ -54075,30 +55818,27 @@ Objects {
     Overrides {
       Name: "bp:Cloud Color"
       Color {
-        R: 2
-        G: 2
-        B: 2
+        G: 0.166666508
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "bp:Cloud Shape"
-      Int: 4
+      Enum {
+        Value: "mc:ecloudshapes:2"
+      }
     }
     Overrides {
       Name: "bp:Cloud Lighting Brightness"
-      Float: 1
+      Float: 1.536538
     }
     Overrides {
       Name: "bp:Cloud Wisp Opacity"
-      Float: 0.4
+      Float: 0
     }
     Overrides {
       Name: "bp:Cloud Speed"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Brightness"
       Float: 1
     }
     Overrides {
@@ -54121,12 +55861,46 @@ Objects {
       Name: "bp:High Cloud Noise Scale"
       Float: 0.2
     }
+    Overrides {
+      Name: "bp:Haze Falloff"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Horizon Falloff"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Clouds"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Cloud Sun Behind Transmission"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Sky Influence On Clouds"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cloud Wisp Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Enable Opaque Sky"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Horizon Color"
+      Color {
+        A: 0.9
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

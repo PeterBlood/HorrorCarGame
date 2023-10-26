@@ -5,6 +5,7 @@ Events.Connect("LookAtItem",true/false)    --To let object that I'm holding know
 -- max 12 numbers
 local MANUAL = script:GetCustomProperty("Manual"):WaitForObject()
 local PHONE_BOOK = script:GetCustomProperty("PhoneBook"):WaitForObject()
+local PAPER_LOOK_SFX = script:GetCustomProperty("PaperLookSFX"):WaitForObject()
 
 local Holding=false
 
@@ -56,6 +57,7 @@ end
 Events.Connect("PickedItem",PickedItem)
 function LookAtItem(Look)
     if Holding==true and Look==true then
+        PAPER_LOOK_SFX:Play()
         UpdateUI()
     end
 end

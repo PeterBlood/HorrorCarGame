@@ -1,8 +1,8 @@
 Name: "VRabbit"
 RootId: 7345491780355375106
 Objects {
-  Id: 13689699428670764302
-  Name: "Sports Bowling Ball Rolling on Floor Loop 02 SFX"
+  Id: 11987110664769068948
+  Name: "OtherSounds"
   Transform {
     Location {
     }
@@ -15,6 +15,320 @@ Objects {
     }
   }
   ParentId: 7345491780355375106
+  ChildIds: 18314321113259493719
+  ChildIds: 6099275701014549548
+  ChildIds: 3603750232129359380
+  ChildIds: 13689699428670764302
+  ChildIds: 14947359660813982606
+  ChildIds: 14090915190787007849
+  ChildIds: 2948698562142488252
+  ChildIds: 11953989554618339639
+  ChildIds: 1394043136268544024
+  ChildIds: 15352853494464602937
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15352853494464602937
+  Name: "Dark Cave Monster Horror Distant Growl 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11987110664769068948
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 4894274961891451701
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 1394043136268544024
+  Name: "Vehicle Turn Signal Blinker Light Single B 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11987110664769068948
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3721918567663868281
+    }
+    Pitch: -2400
+    Volume: 0.462336183
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 11953989554618339639
+  Name: "Heavy Mechanical Door Airlock Pneumatic 02 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11987110664769068948
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8570133166349024324
+    }
+    Pitch: -1068.22375
+    Volume: 0.721327126
+    Falloff: -1
+    Radius: -1
+    FadeOutTime: 0.05
+    StopTime: 0.3
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 2948698562142488252
+  Name: "DoorCloseSFX"
+  Transform {
+    Location {
+      X: -426
+      Y: 384
+      Z: 131
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11987110664769068948
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 2621482017367696168
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 14090915190787007849
+  Name: "DoorOpenSFX"
+  Transform {
+    Location {
+      X: -426
+      Y: 384
+      Z: 131
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11987110664769068948
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 1275878060699046961
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    FadeOutTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+    StopTime: 0.32
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 14947359660813982606
+  Name: "LockSFX"
+  Transform {
+    Location {
+      X: -425
+      Y: 379
+      Z: 161
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11987110664769068948
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 10124099706063938514
+    }
+    Pitch: 800
+    Volume: 0.7
+    Falloff: -1
+    Radius: 100
+    StartTime: 0.1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 13689699428670764302
+  Name: "WindowSFX"
+  Transform {
+    Location {
+      X: -428
+      Y: 302
+      Z: 100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11987110664769068948
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -32,50 +346,11 @@ Objects {
       Id: 11373950078192812725
     }
     Pitch: -450
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 18314321113259493719
-  Name: "Rolling Plastic Box Wheel Movement Loop 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7345491780355375106
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 10119425215035382443
-    }
-    Pitch: 2400
-    Volume: 1
-    Falloff: -1
-    Radius: -1
+    Volume: 0.5
+    Falloff: 1000
+    Radius: 10
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -96,7 +371,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7345491780355375106
+  ParentId: 11987110664769068948
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -137,7 +412,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7345491780355375106
+  ParentId: 11987110664769068948
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -165,8 +440,8 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 3136499632677376698
-  Name: "LeaverClickSFX"
+  Id: 18314321113259493719
+  Name: "Rolling Plastic Box Wheel Movement Loop 01 SFX"
   Transform {
     Location {
     }
@@ -178,7 +453,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7345491780355375106
+  ParentId: 11987110664769068948
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -193,141 +468,12 @@ Objects {
   }
   AudioInstance {
     AudioAsset {
-      Id: 4198131417365230488
+      Id: 10119425215035382443
     }
+    Pitch: 2400
     Volume: 1
     Falloff: -1
     Radius: -1
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 2948698562142488252
-  Name: "DoorCloseSFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7345491780355375106
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 2621482017367696168
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    IsSpatializationEnabled: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 14090915190787007849
-  Name: "DoorOpenSFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7345491780355375106
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 1275878060699046961
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    FadeOutTime: 0.1
-    IsSpatializationEnabled: true
-    StopTime: 0.32
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 14947359660813982606
-  Name: "LockSFX"
-  Transform {
-    Location {
-      X: -129
-      Y: 379
-      Z: 161
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7345491780355375106
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 10124099706063938514
-    }
-    Pitch: 800
-    Volume: 0.7
-    Falloff: -1
-    Radius: 100
-    StartTime: 0.1
-    IsSpatializationEnabled: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -5141,6 +5287,8 @@ Objects {
   ChildIds: 17557419567025016952
   ChildIds: 9655238875959072677
   ChildIds: 6667491519456510585
+  ChildIds: 2504900037879826065
+  ChildIds: 5126622299160113111
   ChildIds: 7173363649694205540
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -5246,6 +5394,30 @@ Objects {
         SelfId: 12345613329173169625
       }
     }
+    Overrides {
+      Name: "cs:ElectrocutedCam"
+      ObjectReference {
+        SelfId: 6967710692128231912
+      }
+    }
+    Overrides {
+      Name: "cs:ElectrocutionSFX"
+      ObjectReference {
+        SelfId: 16556552573701067899
+      }
+    }
+    Overrides {
+      Name: "cs:ElectrPostProcess"
+      ObjectReference {
+        SelfId: 2504900037879826065
+      }
+    }
+    Overrides {
+      Name: "cs:SparkVFX"
+      ObjectReference {
+        SelfId: 5126622299160113111
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5266,6 +5438,148 @@ Objects {
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 5126622299160113111
+  Name: "SparkVFX"
+  Transform {
+    Location {
+      X: -348.295288
+      Y: 290.193237
+      Z: 153.274689
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2192538175385576396
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Initial Velocity"
+      Vector {
+        X: 20
+        Y: 20
+        Z: 100
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Spark Line Scale Multiplier"
+      Float: 0.529078066
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        G: 0.699999809
+        B: 2
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17731889627563964846
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  Relevance {
+    Value: "mc:edistancerelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 2504900037879826065
+  Name: "ElectrPostProcess"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2192538175385576396
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Clear Radius"
+      Float: 0.218218535
+    }
+    Overrides {
+      Name: "bp:Edge Speed"
+      Float: 150
+    }
+    Overrides {
+      Name: "bp:Brightness Shift"
+      Float: -0.04153
+    }
+    Overrides {
+      Name: "bp:Center Area Contrast"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Blur Distance"
+      Float: 15
+    }
+    Overrides {
+      Name: "bp:Ragged Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:High Quality"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4160669001616705185
+    }
+    TeamSettings {
+    }
+  }
+  Relevance {
+    Value: "mc:edistancerelevance:critical"
   }
   IsReplicationEnabledByDefault: true
 }

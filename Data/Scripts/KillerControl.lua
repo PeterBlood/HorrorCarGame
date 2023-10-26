@@ -5,6 +5,10 @@ local DOOR_2 = script:GetCustomProperty("Door2"):WaitForObject()
 local DOOR_3 = script:GetCustomProperty("Door3"):WaitForObject()
 local DOOR_4 = script:GetCustomProperty("Door4"):WaitForObject()
 
+local KILLER_ACTIVE_SFX = script:GetCustomProperty("KillerActiveSFX"):WaitForObject()
+local KILLER_WAIT_SFX = script:GetCustomProperty("KillerWaitSFX"):WaitForObject()
+local KILLER_DISTRACTION_SFX = script:GetCustomProperty("KillerDistractionSFX"):WaitForObject()
+
 --[[
     local CAMERA_ID = script:GetCustomProperty("CameraID")
     local NEED_ITEM = script:GetCustomProperty("NeedItem")
@@ -21,9 +25,10 @@ local DOOR_4 = script:GetCustomProperty("Door4"):WaitForObject()
     local DOOR = script:GetCustomProperty("Door")   -- int- 0 - 100
 ]]
 local Dead=false
+local Stunned=false
 local Hidden=true
 local CurrentPhase=0
-local NextPhase=time()+5
+local NextPhase=time()+30
 local NextPause=time()
 
 
@@ -135,14 +140,16 @@ function InteractionPress(ref)
         local Door=script:GetCustomProperty(str):WaitForObject()
         for _,obj1 in pairs(Door:GetChildren()) do
             if obj1==obj then
-                if a==CurrentDoorID then
-                    Hide()
-                end
-                if obj1.name=="lock" then
-                    DoorTime[a]["LockT"]=time()+LockCD
-                    DoorTime[a]["DoorT"]=time()+DoorCD
-                elseif obj1.name=="Handle" then
-                    DoorTime[a]["DoorT"]=time()+DoorCD
+                if Door:GetCustomProperty("Window")>15 then
+                    if a==CurrentDoorID then
+                        Hide()
+                    end
+                    if obj1.name=="lock" then
+                        DoorTime[a]["LockT"]=time()+LockCD
+                        DoorTime[a]["DoorT"]=time()+DoorCD
+                    elseif obj1.name=="Handle" then
+                        DoorTime[a]["DoorT"]=time()+DoorCD
+                    end
                 end
             end
         end
@@ -155,10 +162,12 @@ function InteractionHold(ref)
         local Door=script:GetCustomProperty(str):WaitForObject()
         for _,obj1 in pairs(Door:GetChildren()) do
             if obj1==obj and obj1.name=="WindowHandle" then
-                if a==CurrentDoorID then
-                    Hide()
+                if Door:GetCustomProperty("Window")>15 then
+                    if a==CurrentDoorID then
+                        Hide()
+                    end
+                    DoorTime[a]["WindowT"]=time()+WindowCD
                 end
-                DoorTime[a]["WindowT"]=time()+WindowCD
             end
         end
     end
@@ -171,6 +180,16 @@ function SelectPosition()
     for a=1,4 do
         local str="Door"..a
         if time()>DoorTime[a]["JumpT"] and time()>DoorTime[a]["DoorT"] and script:GetCustomProperty(str):WaitForObject():GetCustomProperty("Lock")==false then
+            GoodPos[#GoodPos+1]=a
+        end
+    end
+    if #GoodPos>0 then
+        if #GoodPos>1 then return GoodPos[math.random(#GoodPos)] else return GoodPos[1] end
+    end
+    local GoodPos={}
+    for a=1,4 do
+        local str="Door"..a
+        if time()>DoorTime[a]["JumpT"] and script:GetCustomProperty(str):WaitForObject():GetCustomProperty("Window")==0 then
             GoodPos[#GoodPos+1]=a
         end
     end
@@ -221,6 +240,9 @@ end
 
 function AdvancePhase()
     if Phase[CurrentPhase+1]~=nil then
+        if Stunned==true then
+            Stunned=false
+        end
         RemoteLocks=Phase[CurrentPhase+1]["RemoteLocks"]
         RemoteWindows=Phase[CurrentPhase+1]["RemoteWindows"]
         RemoteDoors=Phase[CurrentPhase+1]["RemoteDoors"]
@@ -255,9 +277,15 @@ function Tick()
     if time()>NextPause and time()<NextPhase then
         --print("Pause "..NextPhase-time())
         if Hidden==false then
+            if Stunned==false then
+                KILLER_WAIT_SFX:Play()
+            end
             Hide()
         end
     elseif time()>NextPhase then
+        if Stunned==false then
+            KILLER_ACTIVE_SFX:Play()
+        end
         AdvancePhase()
     else
         --print("NextPause "..NextPause-time())
@@ -306,9 +334,17 @@ end
 
 
 function KillerDistraction(DistTime)
+    Stunned=true
+    KILLER_DISTRACTION_SFX:Play()
     Phase[CurrentPhase]["PhaseDuration"]=NextPause-time()
     NextPhase=time()+DistTime
     NextPause=time()-1
     CurrentPhase=CurrentPhase-1
 end
 Events.Connect("KillerDistraction",KillerDistraction)
+
+function ElectrocutionDeath()
+    Dead=true
+    KILLER.visibility=Visibility.FORCE_OFF
+end
+Events.Connect("ElectrocutionDeath",ElectrocutionDeath)

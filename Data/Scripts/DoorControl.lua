@@ -8,6 +8,9 @@ local WINDOW_HANDLE = script:GetCustomProperty("WindowHandle"):WaitForObject()
 local HANDLE = script:GetCustomProperty("Handle"):WaitForObject()
 local DOOR = script:GetCustomProperty("Door"):WaitForObject()
 local WINDOW = script:GetCustomProperty("Window"):WaitForObject()
+local LOCK_SFX = script:GetCustomProperty("LockSFX"):WaitForObject()
+local DOOR_OPEN_SFX = script:GetCustomProperty("DoorOpenSFX"):WaitForObject()
+local DOOR_CLOSE_SFX = script:GetCustomProperty("DoorCloseSFX"):WaitForObject()
 
 local LockT=0
 local WindowT=0
@@ -19,6 +22,7 @@ function UpdateLock()
     if DOOR:GetCustomProperty("Lock")==true then
         LOCK:SetPosition(Vector3.New(-31.391,150.765,53.653))
     else
+        LOCK_SFX:Play()
         LOCK:SetPosition(Vector3.New(-38.967,150.765,60.053))
     end
 end
@@ -46,8 +50,12 @@ function UpdateDoor()
     DOOR:StopRotate()
     if DOOR:GetCustomProperty("Door")==100 then
         DOOR:RotateTo(rot,0.1)
+        DOOR_CLOSE_SFX:Play()
     else
         DOOR:RotateTo(rot,0.3)
+        if DOOR:GetCustomProperty("Door")==90 then
+            DOOR_OPEN_SFX:Play()
+        end
     end
 end
 

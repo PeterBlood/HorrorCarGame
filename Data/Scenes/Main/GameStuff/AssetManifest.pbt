@@ -1,4 +1,13 @@
 Assets {
+  Id: 18377676435669892575
+  Name: "Spider Shaker Scuttle Single 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_spider_shaker_scuttle_single_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 17913876461124844242
   Name: "Urban Modern Couch Sectional 01- Back Pillow 01"
   PlatformAssetType: 1
@@ -62,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17502059183620981942
+  Name: "Vehicle Car Door Latch Open 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_Vehicle_Car_Door_latch_Open_01_Cue_ref"
+  }
+}
+Assets {
   Id: 17380926541977706202
   Name: "Cylinder - Chamfered"
   PlatformAssetType: 1
@@ -89,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17055639470500927299
+  Name: "Ear Ringing Piercing Harsh Passing Tone Short 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ear_ringing_piercing_harsh_passing_tone_short_01_Cue_ref"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -98,12 +125,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16622944718023322083
+  Name: "Ambience Suburbs Night Crickets 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_suburbs_crickets_01_Cue_ref"
+  }
+}
+Assets {
   Id: 16516459769229762722
   Name: "Urban Car Screens 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_urb_car_kit_tachometer_001_ref"
+  }
+}
+Assets {
+  Id: 16431512364687164021
+  Name: "Small Objects Candy Pick Up Fall On Floor Single 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_small_objects_candy_pick_up_fall_on_floor_single_02a_Cue_ref"
   }
 }
 Assets {
@@ -260,6 +305,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13613473490472746230
+  Name: "Electricity Zap Quick Spark Arc 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_electricity_zap_quick_spark_arc_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 13500074740577565808
   Name: "Urban Vehicle Car - Running Board End 01"
   PlatformAssetType: 1
@@ -320,6 +374,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_urb_car_kit_door_front_001_ref"
+  }
+}
+Assets {
+  Id: 12344193518355455075
+  Name: "Star Dome"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_StarDome"
   }
 }
 Assets {
@@ -422,12 +485,39 @@ Assets {
   }
 }
 Assets {
+  Id: 10124099706063938514
+  Name: "Sci-fi Door Hatch Lock 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_scifi_door_hatch_lock_01_Cue_ref"
+  }
+}
+Assets {
   Id: 10037221186293404892
   Name: "Urban Vehicle Sedan - Door Rear 01 - Window 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_urb_car_sdn_door_rear_001_window_001_ref"
+  }
+}
+Assets {
+  Id: 10022100894324931865
+  Name: "Creature Owl and Loon Distant Calls Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_creature_owl_ref"
+  }
+}
+Assets {
+  Id: 9508369683182150641
+  Name: "Vehicle Turn Signal Blinker Light Single A 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vehicle_turn_signal_blinker_light_single_a_01_Cue_ref"
   }
 }
 Assets {
@@ -512,6 +602,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7379614950691093311
+  Name: "Squeaky Rusty Reel Wheel Lift 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_squeaky_rusty_reel_wheel_lift_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 7204726823262663383
   Name: "Plane Parallelogram - One Sided"
   PlatformAssetType: 1
@@ -536,6 +635,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ring_faceted_003"
+  }
+}
+Assets {
+  Id: 6443071759541659116
+  Name: "Creature Owl Hooting 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_owl_hooting_01_Cue_ref"
   }
 }
 Assets {
@@ -626,6 +734,33 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_urb_car_kit_wndshield_001_ref"
+  }
+}
+Assets {
+  Id: 4773397885257877368
+  Name: "Creature Ghost Breath 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_ghost_breath_02_Cue_ref"
+  }
+}
+Assets {
+  Id: 4456246394385036677
+  Name: "Weapon Handle Grab 03 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_weapon_handle_03_Cue_ref"
+  }
+}
+Assets {
+  Id: 4198131417365230488
+  Name: "Vehicle Plastic Switch Panel Button Click 03 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vehicle_plastic_switch_panel_button_click_03a_Cue_ref"
   }
 }
 Assets {
@@ -728,6 +863,24 @@ Assets {
   }
 }
 Assets {
+  Id: 2908011939222192120
+  Name: "Flesh Skin Face Slap Hard 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_flesh_skin_face_slap_hard_01a_Cue_ref"
+  }
+}
+Assets {
+  Id: 2621482017367696168
+  Name: "Vehicle Car Door Close 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_Vehicle_Car_Door_Close_02a_Cue_ref"
+  }
+}
+Assets {
   Id: 1872637808916315935
   Name: "Icon Close"
   PlatformAssetType: 9
@@ -752,6 +905,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Core_UI_AbstractPackFrame_004"
+  }
+}
+Assets {
+  Id: 1275878060699046961
+  Name: "Vehicle Car Door Open 03 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_Vehicle_Car_Door_Open_03_Cue_ref"
   }
 }
 Assets {
@@ -788,5 +950,14 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_matte_001"
+  }
+}
+Assets {
+  Id: 3173404547491986
+  Name: "Electrical Zap Explosion SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_zapsplosion"
   }
 }

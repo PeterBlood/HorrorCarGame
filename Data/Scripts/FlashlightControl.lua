@@ -6,6 +6,7 @@ Events.Connect("KillerDistraction",KillerDistraction)
 local FLASHLIGHT = script:GetCustomProperty("Flashlight"):WaitForObject()
 local OFF = script:GetCustomProperty("OFF"):WaitForObject()
 local FL = script:GetCustomProperty("FL"):WaitForObject()
+local USE_SFX = script:GetCustomProperty("UseSFX"):WaitForObject()
 
 local Holding=false
 
@@ -24,6 +25,7 @@ ev1=Events.Connect("PickedItem",PickedItem)
 function KillerDistraction(DistTime)
     if Holding==true then
         Holding=false
+        USE_SFX:Play()
         FLASHLIGHT:SetWorldRotation(Game.GetLocalPlayer():GetViewWorldRotation())
         FL.visibility=Visibility.FORCE_ON
         OFF.visibility=Visibility.FORCE_OFF

@@ -22,6 +22,10 @@ local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local DEPTH_OF_FIELD = script:GetCustomProperty("Depth of Field"):WaitForObject()
 local MOVEMENT_CONTROL = script:GetCustomProperty("MovementControl"):WaitForObject()
 
+local GLOVES_SFX = script:GetCustomProperty("GlovesSFX"):WaitForObject()
+local BATTERIES_SFX = script:GetCustomProperty("BatteriesSFX"):WaitForObject()
+local PICK_SFX = script:GetCustomProperty("PickSFX"):WaitForObject()
+
 local InteractionsEnable=true
 local BlockLMB=false
 local HoldingItem=nil
@@ -126,6 +130,11 @@ function EquipItem(Object)
     local str=Object.name
     _G.PlayerEquipment[str]=1
     TargetObject=nil
+    if str=="Gloves" then
+        GLOVES_SFX:Play()
+    elseif str=="Batteries" then
+        BATTERIES_SFX:Play()
+    end
     Object:Destroy()
     Events.Broadcast("PlayerEquipmentChanged")
 end
@@ -147,6 +156,7 @@ function Press(_,action,_)
                 EquipItem(TargetObject)
                 --Events.Broadcast("EquipItem",str)
             elseif API_ITEM_LIST[str]["Category"]=="Item" then
+                PICK_SFX:Play()
                 if HoldingItem~=nil then
                     local item=HoldingItem
                     HoldingItem=nil

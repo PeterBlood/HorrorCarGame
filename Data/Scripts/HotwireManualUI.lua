@@ -5,6 +5,7 @@ Events.Connect("LookAtItem",true/false)    --To let object that I'm holding know
 local HOTWIRE_MANUAL = script:GetCustomProperty("HotwireManual"):WaitForObject()
 
 local MANUAL = script:GetCustomProperty("Manual"):WaitForObject()
+local PAPER_LOOK_SFX = script:GetCustomProperty("PaperLookSFX"):WaitForObject()
 
 local Holding=false
 
@@ -33,6 +34,7 @@ end
 Events.Connect("PickedItem",PickedItem)
 function LookAtItem(Look)
     if Holding==true and Look==true then
+        PAPER_LOOK_SFX:Play()
         UpdateUI()
     end
 end

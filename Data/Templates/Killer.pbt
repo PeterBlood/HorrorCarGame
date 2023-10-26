@@ -464,6 +464,24 @@ Assets {
               SelfId: 12345613329173169625
             }
           }
+          Overrides {
+            Name: "cs:KillerActiveSFX"
+            ObjectReference {
+              SelfId: 995372096557406383
+            }
+          }
+          Overrides {
+            Name: "cs:KillerWaitSFX"
+            ObjectReference {
+              SelfId: 11350849103541300872
+            }
+          }
+          Overrides {
+            Name: "cs:KillerDistractionSFX"
+            ObjectReference {
+              SelfId: 10629936717339057930
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

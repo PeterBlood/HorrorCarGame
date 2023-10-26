@@ -87,7 +87,7 @@ function Pressed(_,action,_)
     elseif action=="0" or action=="1" or action=="2" or action=="3" or action=="4" or action=="5" or action=="6" or action=="7" or action=="8" or action=="9" then
         if #TEXT.text<10 then
             CLICK_SFX:Stop()
-            CLICK_SFX.pitch=-900+tonumber(action*100)
+            CLICK_SFX.pitch=0-tonumber(action*100)
             CLICK_SFX:Play()
             TEXT.text=TEXT.text..action
         end

@@ -20,6 +20,7 @@ Assets {
         ChildIds: 16047372324243067558
         ChildIds: 16959061558457309186
         ChildIds: 3542339352828741875
+        ChildIds: 10855443693115584758
         UnregisteredParameters {
           Overrides {
             Name: "cs:DefPos"
@@ -4184,6 +4185,12 @@ Assets {
               SubObjectId: 15639208098058739053
             }
           }
+          Overrides {
+            Name: "cs:PaperLookSFX"
+            ObjectReference {
+              SubObjectId: 10855443693115584758
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -4202,6 +4209,50 @@ Assets {
           ScriptAsset {
             Id: 4407165243479261116
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 10855443693115584758
+        Name: "PaperLookSFX"
+        Transform {
+          Location {
+            X: 3.75469971
+            Y: -1.62512207
+            Z: 7.48074341
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15639208098058739053
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 762613810994025292
+          }
+          Volume: 0.4
+          Falloff: -1
+          Radius: -1
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -4252,6 +4303,15 @@ Assets {
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "OswaldExtraLight_ref"
+      }
+    }
+    Assets {
+      Id: 762613810994025292
+      Name: "Paper Book Open Close Page Fast 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_paper_book_open_close_page_fast_01_Cue_ref"
       }
     }
     PrimaryAssetId {
