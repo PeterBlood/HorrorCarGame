@@ -205,6 +205,15 @@ function Press(_,action,_)
             end
         end
     end
+    if action=="MMB" and BlockLMB==false then
+        if HoldingItem~=nil then
+            local item=HoldingItem
+            HoldingItem=nil
+            item:SetWorldPosition(item:GetCustomProperty("DefPos"))
+            item:SetWorldRotation(item:GetCustomProperty("DefRot"))
+            item:FindChildByName("Geo"):SetRotation(Rotation.New(0,0,0))
+        end
+    end
     if action=="RMB" then
         if HoldingItem~=nil then
             if LookingAtItem==true then

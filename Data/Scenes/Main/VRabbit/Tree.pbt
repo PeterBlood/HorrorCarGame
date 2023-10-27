@@ -6326,6 +6326,18 @@ Objects {
         SelfId: 16616279683480457776
       }
     }
+    Overrides {
+      Name: "cs:StaticSFX"
+      ObjectReference {
+        SelfId: 14952689969726670206
+      }
+    }
+    Overrides {
+      Name: "cs:Radio1SFX"
+      ObjectReference {
+        SelfId: 1227358957894611583
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

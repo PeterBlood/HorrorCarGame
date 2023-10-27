@@ -134,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17048666404026618850
+  Name: "\"LoFi Moody\" Sections Kit 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_lofi_moody_sections_kit_ref"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -665,6 +674,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9884154722697617662
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 9508369683182150641
   Name: "Vehicle Turn Signal Blinker Light Single A 01 SFX"
   PlatformAssetType: 7
@@ -1076,6 +1094,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameHighlighted_020"
+  }
+}
+Assets {
+  Id: 4053463489672560116
+  Name: "Communications Radio Static Loop 03 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_communications_radio_static_loop_03_Cue_ref"
+  }
+}
+Assets {
+  Id: 3852228900322088215
+  Name: "Radio Change Tuning Knob Static 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_radio_change_tuning_knob_static_02_Cue_ref"
   }
 }
 Assets {

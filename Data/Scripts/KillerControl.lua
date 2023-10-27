@@ -11,6 +11,9 @@ local KILLER_ACTIVE_SFX = script:GetCustomProperty("KillerActiveSFX"):WaitForObj
 local KILLER_WAIT_SFX = script:GetCustomProperty("KillerWaitSFX"):WaitForObject()
 local KILLER_DISTRACTION_SFX = script:GetCustomProperty("KillerDistractionSFX"):WaitForObject()
 local SHOW_FACE_SFX = script:GetCustomProperty("ShowFaceSFX"):WaitForObject()
+local STATIC_SFX = script:GetCustomProperty("StaticSFX"):WaitForObject()
+local KILLER_SWITCH_SFX = script:GetCustomProperty("KillerSwitchSFX"):WaitForObject()
+local RADIO_1_SFX = script:GetCustomProperty("Radio1SFX"):WaitForObject()
 
 local FACE_1 = script:GetCustomProperty("face1")
 local FACE_3 = script:GetCustomProperty("face3")
@@ -316,14 +319,20 @@ function Tick()
         --print("Pause "..NextPhase-time())
         if Hidden==false then
             if Stunned==false then
-                KILLER_WAIT_SFX:Play()
+                KILLER_SWITCH_SFX:Play()
+                STATIC_SFX:Stop()
+                RADIO_1_SFX:Play()
+                --KILLER_WAIT_SFX:Play()
             end
             Hide()
         end
     elseif time()>NextPhase then
         if Stunned==false then
-            KILLER_ACTIVE_SFX.pitch=-500+math.random(800)
-            KILLER_ACTIVE_SFX:Play()
+            KILLER_SWITCH_SFX:Play()
+            STATIC_SFX:Play()
+            RADIO_1_SFX:Stop()
+            --KILLER_ACTIVE_SFX.pitch=-500+math.random(800)
+            --KILLER_ACTIVE_SFX:Play()
         end
         AdvancePhase()
     else
@@ -403,6 +412,7 @@ function StartGame()
     NextPhase=time()+30
     NextPause=time()-1
     JumpDelay=time()
+    RADIO_1_SFX:Play()
     GameInProgress=true
 end
 Events.Connect("StartGame",StartGame)
