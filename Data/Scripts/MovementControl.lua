@@ -28,6 +28,7 @@ local D = script:GetCustomProperty("D"):WaitForObject()
 local W = script:GetCustomProperty("W"):WaitForObject()
 ------
 
+local GameInProgress=false
 local player=Game.GetLocalPlayer()
 local LastMove=0
 local MyPos=3
@@ -37,7 +38,7 @@ for _,obj in pairs(CAMERA_POS:GetChildren()) do
         MyCamera=obj
     end
 end
-local CanMove=true
+local CanMove=false
 
 function UpdateUI()
     if CanMove==true then
@@ -148,4 +149,16 @@ end
 Events.Connect("BlockMovement",BlockMovement)
 
 
-UpdateUI()
+
+W.visibility=Visibility.FORCE_OFF
+A.visibility=Visibility.FORCE_OFF
+S.visibility=Visibility.FORCE_OFF
+D.visibility=Visibility.FORCE_OFF
+function StartGame()
+    GameInProgress=true
+    CanMove=true
+    UpdateUI()
+end
+Events.Connect("StartGame",StartGame)
+
+

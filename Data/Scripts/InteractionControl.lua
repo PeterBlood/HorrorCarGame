@@ -27,14 +27,16 @@ local BATTERIES_SFX = script:GetCustomProperty("BatteriesSFX"):WaitForObject()
 local PICK_SFX = script:GetCustomProperty("PickSFX"):WaitForObject()
 local PHONE_BOOK_SFX = script:GetCustomProperty("PhoneBookSFX"):WaitForObject()
 
-local InteractionsEnable=true
-local BlockLMB=false
+local GameInProgress=false
+local InteractionsEnable=false
+local BlockLMB=true
 local HoldingItem=nil
 local LookingAtItem=false
 local TargetObject=nil
 local InteractionHold=false
 -------------Detecting what am I looking at and holding item in front of player--------------
 function Tick()
+    if GameInProgress==false then return end
     local player=Game.GetLocalPlayer()
     local Qua=Quaternion.New(player:GetViewWorldRotation())
     if InteractionsEnable and BlockLMB==false then
@@ -270,3 +272,10 @@ function PhoneDead()
     LookFocus()
 end
 Events.Connect("PhoneDead",PhoneDead)
+
+function StartGame()
+    GameInProgress=true
+    InteractionsEnable=true
+    BlockLMB=false
+end
+Events.Connect("StartGame",StartGame)

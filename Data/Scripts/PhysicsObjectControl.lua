@@ -47,11 +47,11 @@ function GetDistanceToArea()
 end
 ---------------Spawn interactable object without physics simulation---------------------
 function SpawnObject()
-    local hitResult = World.Raycast(spawnPos, script:GetWorldPosition())
+    --[[local hitResult = World.Raycast(spawnPos, script:GetWorldPosition())
     if hitResult~=nil then
         print(hitResult.other.name)
         CoreDebug.DrawLine(spawnPos, hitResult:GetImpactPosition(), {duration = 20,color = Color.WHITE,thickness = 3})
-    end
+    end]]
     local obj=World.SpawnAsset(OBJECT,{position=script:GetWorldPosition(),rotation=script:GetWorldRotation()})
     
     obj:SetCustomProperty("CameraID",myArea:GetCustomProperty("CameraID"))

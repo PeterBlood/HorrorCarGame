@@ -8,5 +8,9 @@ Assets {
       VirtualFolderPath: "Items"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Vehicles"
+      PlatformAssetType: 13
+    }
   }
 }

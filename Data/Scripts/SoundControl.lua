@@ -8,12 +8,13 @@ local OUTSIDE_AMBIENCE_SFX = script:GetCustomProperty("OutsideAmbienceSFX"):Wait
 
 local ogVol1=AMBIENCE_SFX.volume
 local ogVol2=OUTSIDE_AMBIENCE_SFX.volume
-local BlockUpdate=false
+local BlockUpdate=true
 
 local Pos=Vector3.New(0,0,0)
+local GameInProgress=false
 
 function Tick()
-    if BlockUpdate==true then return end
+    if BlockUpdate==true or GameInProgress==false then return end
     --local WINDOW = script:GetCustomProperty("Window")
     --local DOOR = script:GetCustomProperty("Door")
     local pr1=DOOR_1:GetCustomProperty("Window")
@@ -55,3 +56,12 @@ function DoorDeath()
     BlockUpdate=true
 end
 Events.Connect("DoorDeath",DoorDeath)
+
+
+AMBIENCE_SFX.volume=0
+OUTSIDE_AMBIENCE_SFX.volume=0
+function StartGame()
+    GameInProgress=true
+    BlockUpdate=false
+end
+Events.Connect("StartGame",StartGame)

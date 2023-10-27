@@ -15,6 +15,7 @@ function VictoryHotwire()
     BLACK_SCREEN.opacity=1
     BLACK_SCREEN.visibility=Visibility.FORCE_ON
     Task.Wait(2.0)--2.5
+    Events.Broadcast("StopLooking")
     CAR_MOVE_SFX:Play()
     GameOver=true
 
@@ -30,6 +31,7 @@ function VictoryPhone()
     local pos=CAR:GetPosition()
     CAR:MoveTo(Vector3.New(pos.x,1000,pos.z),5,true)
     Task.Wait(4)
+    Events.Broadcast("StopLooking")
     CAR_LOOP_SFX:Stop()
     SHUTDOWN_SFX:Play()
     BLACK_SCREEN.opacity=1

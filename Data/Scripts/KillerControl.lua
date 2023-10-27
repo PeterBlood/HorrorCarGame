@@ -27,6 +27,7 @@ local SHOW_FACE_SFX = script:GetCustomProperty("ShowFaceSFX"):WaitForObject()
     local WINDOW = script:GetCustomProperty("Window")   -- int- 0 - 100
     local DOOR = script:GetCustomProperty("Door")   -- int- 0 - 100
 ]]
+local GameInProgress=false
 local Dead=false
 local Stunned=false
 local Hidden=true
@@ -297,7 +298,7 @@ function Kill(ID)
 end
 
 function Tick()
-    if Dead==true then return end
+    if Dead==true or GameInProgress==false then return end
     if time()>NextPause and time()<NextPhase then
         --print("Pause "..NextPhase-time())
         if Hidden==false then
@@ -384,3 +385,8 @@ function VictoryPhone()
     KILLER.visibility=Visibility.FORCE_OFF
 end
 Events.Connect("VictoryPhone",VictoryPhone)
+
+function StartGame()
+    GameInProgress=true
+end
+Events.Connect("StartGame",StartGame)
