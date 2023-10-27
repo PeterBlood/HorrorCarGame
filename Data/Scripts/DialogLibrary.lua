@@ -160,7 +160,7 @@ AddText(4,"I understand your fear, John. But remember, I'm a retired firefighter
 AddText(4,"What should I do if I see or hear something suspicious?}TextColor44")
 AddText(4,"If you see or hear anything suspicious, try to distract him with some bright light or something until I get there.}TextColor4")
 AddText(4,"Okay, I'll do that. Thank you, Mr. Moore.}TextColor44")
-AddText(4,"You're welcome, John. I'm going to stay on the line with you until you're safe. We'll get through this together.}TextColor4")
+AddText(4,"You're welcome, John. I'm going to stay on the line with you until you're safe. I'm on my way.}TextColor4")
 AddText(4,"*beep*}TextColor0")
 Task.Wait(0.1)
 AddText(5,"*click*}TextColor0")
