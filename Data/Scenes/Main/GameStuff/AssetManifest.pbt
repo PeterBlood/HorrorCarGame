@@ -323,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14613699412324816104
+  Name: "Teko Light"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoLight_ref"
+  }
+}
+Assets {
   Id: 14582790818618070150
   Name: "Asphalt 01"
   PlatformAssetType: 2

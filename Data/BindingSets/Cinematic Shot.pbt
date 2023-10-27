@@ -26,7 +26,6 @@ Assets {
       CoreBehavior {
         Value: "mc:ecorebehavior:none"
       }
-      IsEnabledOnStart: true
     }
   }
 }
