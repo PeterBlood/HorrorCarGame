@@ -379,3 +379,8 @@ function VictoryHotwire()
     KILLER.visibility=Visibility.FORCE_OFF
 end
 Events.Connect("VictoryHotwire",VictoryHotwire)
+function VictoryPhone()
+    Dead=true
+    KILLER.visibility=Visibility.FORCE_OFF
+end
+Events.Connect("VictoryPhone",VictoryPhone)

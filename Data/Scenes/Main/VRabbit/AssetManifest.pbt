@@ -26,12 +26,48 @@ Assets {
   }
 }
 Assets {
+  Id: 15778373806099801472
+  Name: "Plasma Ball Projectile VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_plasmaball_projectile"
+  }
+}
+Assets {
+  Id: 14708008335668268321
+  Name: "Vehicle Car Engine Shutdown Off Cutoff 08"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vehicle_car_engine_shutdown_off_cutoff_08_Cue_ref"
+  }
+}
+Assets {
+  Id: 14613699412324816104
+  Name: "Teko Light"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoLight_ref"
+  }
+}
+Assets {
   Id: 13415011538399733573
   Name: "Squeaky Rusty Reel Wheel Lift Loop 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_squeaky_rusty_reel_wheel_lift_loop_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 12827530473249900764
+  Name: "Emissive Glow Opaque"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_opaque_emissive"
   }
 }
 Assets {
@@ -113,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_birch_tree_01_crown_bare_01_ref"
+  }
+}
+Assets {
+  Id: 9050270435112158904
+  Name: "Vehicle Rally Car Engine Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_engine_rally_car_01_Cue_ref"
   }
 }
 Assets {
@@ -203,6 +248,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_ppm_radial_blur"
+  }
+}
+Assets {
+  Id: 4112356214794614367
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
   }
 }
 Assets {

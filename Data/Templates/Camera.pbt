@@ -17,7 +17,6 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 4928476316258049042
-        ChildIds: 2551625214670147567
         ChildIds: 2276392904544850559
         ChildIds: 9779887167919727049
         ChildIds: 990031644951459290
@@ -96,6 +95,9 @@ Assets {
         Name: "Geo"
         Transform {
           Location {
+            X: 2.73040771
+            Y: 4.36889648
+            Z: 2.18038177
           }
           Rotation {
           }
@@ -106,7 +108,7 @@ Assets {
           }
         }
         ParentId: 1742127476485184948
-        ChildIds: 585803462738687400
+        ChildIds: 9784632031296657500
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -129,15 +131,16 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 585803462738687400
-        Name: "Camera"
+        Id: 9784632031296657500
+        Name: "Group"
         Transform {
           Location {
-            X: 6.74853754
-            Y: 17.8773232
-            Z: -8.79602242
+            X: -1.70448303
+            Y: -6.22009277
+            Z: -10.8574295
           }
           Rotation {
+            Pitch: 90
           }
           Scale {
             X: 0.125
@@ -146,13 +149,7 @@ Assets {
           }
         }
         ParentId: 4928476316258049042
-        ChildIds: 7434826758543580489
-        ChildIds: 17617969387989211729
-        ChildIds: 517633322536060291
-        ChildIds: 16786526231406384248
-        ChildIds: 16658951033969574566
-        ChildIds: 18039730281510562066
-        ChildIds: 6919033759290744834
+        ChildIds: 585803462738687400
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -163,8 +160,207 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
           IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 585803462738687400
+        Name: "Camera"
+        Transform {
+          Location {
+            X: -108.830246
+            Y: -71.0681152
+            Z: 92.82164
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: -54.7355957
+            Roll: -54.7356262
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9784632031296657500
+        ChildIds: 6919033759290744834
+        ChildIds: 2551625214670147567
+        ChildIds: 7434826758543580489
+        ChildIds: 17617969387989211729
+        ChildIds: 517633322536060291
+        ChildIds: 16786526231406384248
+        ChildIds: 16658951033969574566
+        ChildIds: 18039730281510562066
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 6919033759290744834
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: 177.821335
+            Y: 10.8507328
+            Z: -166.289688
+          }
+          Rotation {
+            Pitch: 8.87924543e-05
+            Yaw: -89.9999542
+            Roll: -89.999939
+          }
+          Scale {
+            X: 3.5
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 585803462738687400
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.052083
+              G: 0.052083
+              B: 0.052083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14379024687811914772
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:edistancerelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 2551625214670147567
+        Name: "UseVFX"
+        Transform {
+          Location {
+            X: 12.3591232
+            Y: -6.8443203
+            Z: 238.542404
+          }
+          Rotation {
+            Pitch: 9.56226431e-05
+            Yaw: -89.9999619
+            Roll: -0.000118326971
+          }
+          Scale {
+            X: 20
+            Y: 20
+            Z: 20
+          }
+        }
+        ParentId: 585803462738687400
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 5
+              G: 5
+              B: 5
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 50
+          }
+          Overrides {
+            Name: "bp:Particle Size Multiplier"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Number Of Flares"
+            Int: 5
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5401125983703615642
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:edistancerelevance:medium"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -176,10 +372,14 @@ Assets {
         Name: "Visor"
         Transform {
           Location {
-            Y: -225
-            Z: 200
+            X: -107.1782
+            Y: 10.8507586
+            Z: -91.2895889
           }
           Rotation {
+            Pitch: 8.87924543e-05
+            Yaw: -89.9999542
+            Roll: -89.999939
           }
           Scale {
             X: 1
@@ -197,7 +397,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -269,7 +469,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -299,10 +499,14 @@ Assets {
         Name: "Monitor"
         Transform {
           Location {
-            Y: -275
-            Z: 125
+            X: -32.1784286
+            Y: 10.8507328
+            Z: -141.289597
           }
           Rotation {
+            Pitch: 8.87924543e-05
+            Yaw: -89.9999542
+            Roll: -89.999939
           }
           Scale {
             X: 1
@@ -321,7 +525,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -417,7 +621,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -472,7 +676,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -510,7 +714,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -563,7 +767,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -631,7 +835,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -700,7 +904,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -769,7 +973,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -822,7 +1026,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -875,7 +1079,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -942,7 +1146,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -997,7 +1201,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -1049,7 +1253,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1117,7 +1321,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1185,7 +1389,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1252,7 +1456,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1303,7 +1507,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -1318,11 +1522,14 @@ Assets {
         Name: "Hand Rest"
         Transform {
           Location {
-            X: -350
-            Y: -175
-            Z: 100
+            X: -7.17793465
+            Y: 360.85083
+            Z: -41.2899
           }
           Rotation {
+            Pitch: 8.87924543e-05
+            Yaw: -89.9999542
+            Roll: -89.999939
           }
           Scale {
             X: 1
@@ -1343,7 +1550,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -1413,7 +1620,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1499,7 +1706,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1565,7 +1772,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1625,7 +1832,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -1659,11 +1866,14 @@ Assets {
         Name: "Sci-fi Base Capsule 01 Mid"
         Transform {
           Location {
-            Y: -275
-            Z: 90
+            X: 2.82156
+            Y: 10.8507347
+            Z: -141.289627
           }
           Rotation {
-            Roll: 89.9999542
+            Pitch: 7.51320767e-05
+            Yaw: -89.9999619
+            Roll: -0.00012557146
           }
           Scale {
             X: 0.800000072
@@ -1706,7 +1916,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1736,14 +1946,14 @@ Assets {
         Name: "Modern Weapon - Body 01"
         Transform {
           Location {
-            X: -25
-            Y: -200
-            Z: 125
+            X: -32.1783676
+            Y: 35.8507843
+            Z: -66.2896652
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -179.999969
-            Roll: -179.999893
+            Pitch: 5.46415104e-05
+            Yaw: 89.9999084
+            Roll: -89.9998322
           }
           Scale {
             X: 16
@@ -1816,7 +2026,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1846,14 +2056,14 @@ Assets {
         Name: "Modern Weapon - Body 01"
         Transform {
           Location {
-            X: -200
-            Y: -200
-            Z: 125
+            X: -32.1780815
+            Y: 210.850769
+            Z: -66.289772
           }
           Rotation {
-            Pitch: -90
-            Yaw: 1.51781978e-06
-            Roll: 180
+            Pitch: -6.83018879e-06
+            Yaw: -2.89780328e-05
+            Roll: 89.9999313
           }
           Scale {
             X: 12
@@ -1926,7 +2136,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1945,147 +2155,6 @@ Assets {
         }
         Relevance {
           Value: "mc:edistancerelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
-      }
-      Objects {
-        Id: 6919033759290744834
-        Name: "Cube - Rounded Bottom-Aligned"
-        Transform {
-          Location {
-            Y: -300
-            Z: -85
-          }
-          Rotation {
-          }
-          Scale {
-            X: 3.5
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 585803462738687400
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.052083
-              G: 0.052083
-              B: 0.052083
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14379024687811914772
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:edistancerelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
-      }
-      Objects {
-        Id: 2551625214670147567
-        Name: "UseVFX"
-        Transform {
-          Location {
-            Y: 8.47038174
-          }
-          Rotation {
-            Roll: 90
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1742127476485184948
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 5
-              G: 5
-              B: 5
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 50
-          }
-          Overrides {
-            Name: "bp:Particle Size Multiplier"
-            Float: 3
-          }
-          Overrides {
-            Name: "bp:Number Of Flares"
-            Int: 5
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 5401125983703615642
-          }
-          TeamSettings {
-          }
-          Vfx {
-          }
-        }
-        Relevance {
-          Value: "mc:edistancerelevance:medium"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2217,6 +2286,12 @@ Assets {
               SubObjectId: 1742127476485184948
             }
           }
+          Overrides {
+            Name: "cs:Camera_1"
+            ObjectReference {
+              SubObjectId: 585803462738687400
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -2243,12 +2318,12 @@ Assets {
       }
     }
     Assets {
-      Id: 2168240361010595988
-      Name: "Modern Weapon - Scope 02"
+      Id: 14379024687811914772
+      Name: "Cube - Rounded Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_scope_002"
+        AssetId: "sm_cube_rounded_001"
       }
     }
     Assets {
@@ -2258,6 +2333,24 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "steel_001"
+      }
+    }
+    Assets {
+      Id: 5401125983703615642
+      Name: "Advanced Muzzle Flash VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_muzzleflash_alt"
+      }
+    }
+    Assets {
+      Id: 2168240361010595988
+      Name: "Modern Weapon - Scope 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_modern_scope_002"
       }
     }
     Assets {
@@ -2348,24 +2441,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_modern_body_001"
-      }
-    }
-    Assets {
-      Id: 14379024687811914772
-      Name: "Cube - Rounded Bottom-Aligned"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_rounded_001"
-      }
-    }
-    Assets {
-      Id: 5401125983703615642
-      Name: "Advanced Muzzle Flash VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_muzzleflash_alt"
       }
     }
     Assets {

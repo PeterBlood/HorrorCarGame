@@ -2,6 +2,7 @@ local USE_VFX = script:GetCustomProperty("UseVFX"):WaitForObject()
 local USE_SFX = script:GetCustomProperty("UseSFX"):WaitForObject()
 local CAMERA = script:GetCustomProperty("Camera"):WaitForObject()
 
+local CAMERA_1 = script:GetCustomProperty("Camera_1"):WaitForObject()
 
 local Holding=false
 
@@ -22,7 +23,8 @@ function KillerDistraction(DistTime)
         Holding=false
         USE_SFX:Play()
         USE_VFX:Play()
-        CAMERA:SetWorldRotation(Game.GetLocalPlayer():GetViewWorldRotation())
+        --CAMERA:SetWorldRotation(Game.GetLocalPlayer():GetViewWorldRotation())
+        CAMERA_1:SetWorldRotation(Game.GetLocalPlayer():GetViewWorldRotation())
         ev1:Disconnect()
         ev2:Disconnect()
         Task.Wait(3)

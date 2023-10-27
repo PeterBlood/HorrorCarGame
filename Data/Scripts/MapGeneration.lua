@@ -24,6 +24,7 @@ end
 _G.PlayerEquipment={}
 _G.PlayerEquipment.Gloves=0
 _G.PlayerEquipment.Batteries=0
+_G.PlayerEquipment.PhoneBook=0
 
 --_G.PhoneBookNumbers[NUMBER][INFO]=0 --NUMBER- string / INFO- 1-DIALOGUE_ID 2-DIALOGUE_PART / 
 _G.PhoneBookNumbers={}
@@ -155,6 +156,9 @@ ItemList[6]="Batteries"
 ItemList[7]="Phone"
 ItemList[8]="PhoneBook"
 ItemList[9]="Flashlight"
+ItemList[10]="Map"
+
+ItemList[11]="Camera"
 function GenerateLoot()
     for _,name in pairs(ItemList) do
         ------------PickRandomSpawnPoint----------------

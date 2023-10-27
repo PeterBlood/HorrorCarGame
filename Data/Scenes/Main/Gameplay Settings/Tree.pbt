@@ -152,23 +152,13 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
-      IsCrouchEnabled: true
-      IsJumpEnabled: true
-      CanMoveForward: true
-      CanMoveBackward: true
-      CanMoveLeft: true
-      CanMoveRight: true
       AbilityAimMode {
         Value: "mc:eabilityaimmode:viewrelative"
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
       FlipOnMultiJump: true
-      CanMoveUp: true
-      CanMoveDown: true
-      IsMountEnabled: true
       MaxHitpoints: 100
-      PlayerMasterVolumeMultiplier: 1
       ComplexCollision: true
     }
   }

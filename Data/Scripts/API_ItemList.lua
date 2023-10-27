@@ -111,7 +111,21 @@ API["PhoneBook"]={}
 API["PhoneBook"]["Type"]={}
 API["PhoneBook"]["Type"][1]="Medium"
 API["PhoneBook"]["Type"][2]="Paper"
-API["PhoneBook"]["Category"]="Item"
-API["PhoneBook"]["Distraction"]=false
+API["PhoneBook"]["Category"]="Equipment"
+--API["PhoneBook"]["Distraction"]=false
+-----------------------------------------------
+API["Camera"]={}
+API["Camera"]["Type"]={}
+API["Camera"]["Type"][1]="Medium"
+API["Camera"]["Category"]="Item"
+API["Camera"]["Distraction"]=true
+API["Camera"]["DistractionTime"]=180
+
+API["Map"]={}
+API["Map"]["Type"]={}
+API["Map"]["Type"][1]="Medium"
+API["Map"]["Type"][2]="Paper"
+API["Map"]["Category"]="Item"
+API["Map"]["Distraction"]=false
 
 return API

@@ -19,6 +19,21 @@ local Holding=false
 local Looking=false
 local DialogueInProgress=false
 
+local UI = script:GetCustomProperty("UI"):WaitForObject()
+local MANUAL = script:GetCustomProperty("Manual"):WaitForObject()
+
+local CallsLeft=6
+
+for name,info in pairs(_G.PhoneBookNumbers) do
+    local str=name.." - "..info[3]
+    for _,obj in pairs(MANUAL:GetChildren()) do
+        if obj.text=="" then
+            obj.text=str
+            break
+        end
+    end
+end
+
 function ResetScreen()
     TEXT.text=""
 end
@@ -61,8 +76,12 @@ function LookAtItem(Look)
             if DialogueInProgress==true then
                 Events.Broadcast("EndDialog")
             end
+            UI.visibility=Visibility.FORCE_OFF
         else
             Looking=true
+            if Charged==true and _G.PlayerEquipment.PhoneBook==1 then
+                UI.visibility=Visibility.FORCE_ON
+            end
         end
     end
 end
@@ -77,9 +96,14 @@ function Pressed(_,action,_)
     if action=="Space" then
         for name,info in pairs(_G.PhoneBookNumbers) do
             if name==TEXT.text then
-                print("Call: "..name)
-                DialogueInProgress=true
-                Events.Broadcast("StartDialog", info[1],info[2])
+                if CallsLeft>0 then
+                    print("Call: "..name)
+                    DialogueInProgress=true
+                    Events.Broadcast("StartDialog", info[1],info[2])
+                else
+                    Events.Broadcast("PhoneDead")
+                end
+                CallsLeft=CallsLeft-1
             end
         end
     elseif action=="Backspace" then
@@ -99,3 +123,18 @@ function DialogEnded()
     ResetScreen()
 end
 Events.Connect("DialogEnded",DialogEnded)
+
+local GEO = script:GetCustomProperty("Geo"):WaitForObject()
+local CHARGED_GEO = script:GetCustomProperty("ChargedGeo"):WaitForObject()
+
+function PhoneDead()
+    if Charged==true then
+        POWER_OFFSFX:Play()
+        Charged=false
+        BATTERY_SIGN.visibility=Visibility.FORCE_ON
+        PHONE:SetCustomProperty("ChangeLooks",false)
+        GEO.visibility=Visibility.FORCE_ON
+        CHARGED_GEO.visibility=Visibility.FORCE_OFF
+    end
+end
+Events.Connect("PhoneDead",PhoneDead)

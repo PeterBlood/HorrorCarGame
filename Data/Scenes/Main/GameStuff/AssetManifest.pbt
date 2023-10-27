@@ -233,6 +233,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15460597889272632032
+  Name: "Container - Square 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_square_ref"
+  }
+}
+Assets {
   Id: 15431234632665265779
   Name: "UI Pop Single 02 SFX"
   PlatformAssetType: 7
@@ -932,6 +941,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_panel_1x3m_angledL_001"
+  }
+}
+Assets {
+  Id: 762613810994025292
+  Name: "Paper Book Open Close Page Fast 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_paper_book_open_close_page_fast_01_Cue_ref"
   }
 }
 Assets {

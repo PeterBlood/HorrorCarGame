@@ -1,6 +1,58 @@
 Name: "GameStuff"
 RootId: 35699749381870200
 Objects {
+  Id: 7523571271938485843
+  Name: "Container - Square 01"
+  Transform {
+    Location {
+      Z: -962.026123
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.36458683
+      Y: 8.36458683
+      Z: 8.36458683
+    }
+  }
+  ParentId: 35699749381870200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15460597889272632032
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  Relevance {
+    Value: "mc:edistancerelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 7932769824600727499
   Name: "Audio"
   Transform {
@@ -18,6 +70,7 @@ Objects {
   ChildIds: 13000429410130777912
   ChildIds: 16616279683480457776
   ChildIds: 13558631035124816513
+  ChildIds: 9531156561255970088
   ChildIds: 7310135601258705764
   ChildIds: 11045637387743198282
   ChildIds: 17620503735510373918
@@ -594,6 +647,48 @@ Objects {
       Id: 2908011939222192120
     }
     Volume: 0.3
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 9531156561255970088
+  Name: "PhoneBookSFX"
+  Transform {
+    Location {
+      X: -118
+      Y: 1003
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7932769824600727499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 762613810994025292
+    }
+    Volume: 0.4
     Falloff: -1
     Radius: -1
   }
@@ -2830,6 +2925,12 @@ Objects {
       Name: "cs:PickSFX"
       ObjectReference {
         SelfId: 17620503735510373918
+      }
+    }
+    Overrides {
+      Name: "cs:PhoneBookSFX"
+      ObjectReference {
+        SelfId: 9531156561255970088
       }
     }
   }
@@ -15779,6 +15880,18 @@ Objects {
       Name: "cs:HotwireManualPhysics"
       AssetReference {
         Id: 14519684388273548841
+      }
+    }
+    Overrides {
+      Name: "cs:MapPhysics"
+      AssetReference {
+        Id: 6979922443490199950
+      }
+    }
+    Overrides {
+      Name: "cs:CameraPhysics"
+      AssetReference {
+        Id: 13663579191119245310
       }
     }
   }
@@ -55782,7 +55895,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55964,9 +56077,9 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -259.73407
-      Y: 2094.21851
-      Z: 115
+      X: -36.329895
+      Y: 50.276123
+      Z: -853.64856
     }
     Rotation {
     }

@@ -25,6 +25,7 @@ local MOVEMENT_CONTROL = script:GetCustomProperty("MovementControl"):WaitForObje
 local GLOVES_SFX = script:GetCustomProperty("GlovesSFX"):WaitForObject()
 local BATTERIES_SFX = script:GetCustomProperty("BatteriesSFX"):WaitForObject()
 local PICK_SFX = script:GetCustomProperty("PickSFX"):WaitForObject()
+local PHONE_BOOK_SFX = script:GetCustomProperty("PhoneBookSFX"):WaitForObject()
 
 local InteractionsEnable=true
 local BlockLMB=false
@@ -134,6 +135,8 @@ function EquipItem(Object)
         GLOVES_SFX:Play()
     elseif str=="Batteries" then
         BATTERIES_SFX:Play()
+    elseif str=="PhoneBook" then
+        PHONE_BOOK_SFX:Play()
     end
     Object:Destroy()
     Events.Broadcast("PlayerEquipmentChanged")
@@ -258,3 +261,12 @@ function ReleaseItem()
     end
 end
 Events.Connect("ReleaseItem",ReleaseItem)
+
+function PhoneDead()
+    LookingAtItem=false
+    Events.Broadcast("BlockMovement",false)
+    Events.Broadcast("LookAtItem",false)
+    BlockLMB=false
+    LookFocus()
+end
+Events.Connect("PhoneDead",PhoneDead)
