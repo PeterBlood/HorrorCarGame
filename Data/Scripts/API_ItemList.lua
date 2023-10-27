@@ -99,7 +99,7 @@ API["Flashlight"]["Type"]={}
 API["Flashlight"]["Type"][1]="Medium"
 API["Flashlight"]["Category"]="Item"
 API["Flashlight"]["Distraction"]=true
-API["Flashlight"]["DistractionTime"]=30
+API["Flashlight"]["DistractionTime"]=180
 
 API["Phone"]={}
 API["Phone"]["Type"]={}
