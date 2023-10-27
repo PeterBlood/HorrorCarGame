@@ -22,7 +22,6 @@ function Press(_,action)
             DISCLAIMER.opacity=1-(pr/100)
             Task.Wait(0.01)
         end
-        Events.Broadcast("StartGame")
     end
 end
 Input.actionPressedEvent:Connect(Press)

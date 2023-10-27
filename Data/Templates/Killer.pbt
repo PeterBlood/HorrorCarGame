@@ -451,7 +451,7 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.0558117181
+            X: 0.056
             Y: 0.0558117181
             Z: 0.0558117181
           }
@@ -547,7 +547,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 865694505023307644
+              Id: 5685073707141705392
             }
             Color {
               R: 1
@@ -659,6 +659,30 @@ Assets {
             Name: "cs:ShowFaceSFX"
             ObjectReference {
               SelfId: 1018887142378918415
+            }
+          }
+          Overrides {
+            Name: "cs:UI Image"
+            ObjectReference {
+              SubObjectId: 18124929265504237471
+            }
+          }
+          Overrides {
+            Name: "cs:face1"
+            AssetReference {
+              Id: 865694505023307644
+            }
+          }
+          Overrides {
+            Name: "cs:face3"
+            AssetReference {
+              Id: 5685073707141705392
+            }
+          }
+          Overrides {
+            Name: "cs:face2"
+            AssetReference {
+              Id: 7550598561086352304
             }
           }
         }

@@ -12,6 +12,19 @@ local KILLER_WAIT_SFX = script:GetCustomProperty("KillerWaitSFX"):WaitForObject(
 local KILLER_DISTRACTION_SFX = script:GetCustomProperty("KillerDistractionSFX"):WaitForObject()
 local SHOW_FACE_SFX = script:GetCustomProperty("ShowFaceSFX"):WaitForObject()
 
+local FACE_1 = script:GetCustomProperty("face1")
+local FACE_3 = script:GetCustomProperty("face3")
+local FACE_2 = script:GetCustomProperty("face2")
+local UI_IMAGE = script:GetCustomProperty("UI Image"):WaitForObject()
+
+local randomFace=math.random(3)
+local str="face"..randomFace
+local prop=script:GetCustomProperty(str)
+UI_IMAGE:SetImage(prop)
+if randomFace==3 then
+    UI_CONTAINER:SetScale(Vector3.New(0.112,0.112,0.112))
+end
+
 --[[
     local CAMERA_ID = script:GetCustomProperty("CameraID")
     local NEED_ITEM = script:GetCustomProperty("NeedItem")
@@ -387,6 +400,9 @@ end
 Events.Connect("VictoryPhone",VictoryPhone)
 
 function StartGame()
+    NextPhase=time()+30
+    NextPause=time()-1
+    JumpDelay=time()
     GameInProgress=true
 end
 Events.Connect("StartGame",StartGame)
