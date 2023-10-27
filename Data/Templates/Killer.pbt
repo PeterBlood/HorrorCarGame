@@ -444,7 +444,7 @@ Assets {
         Name: "UI Container"
         Transform {
           Location {
-            X: 8.5574646
+            X: 11.4956055
             Y: -0.734863281
             Z: 181.109528
           }
@@ -547,7 +547,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 7550598561086352304
+              Id: 5685073707141705392
             }
             Color {
               R: 1

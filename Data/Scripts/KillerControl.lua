@@ -33,7 +33,7 @@ local Hidden=true
 local CurrentPhase=0
 local NextPhase=time()+30
 local NextPause=time()
-
+local JumpDelay=time()
 
 local DoorTime={}
 local WindowCD=10
@@ -64,7 +64,7 @@ Phase[1]["LockCD"]=20
 Phase[1]["DoorCD"]=20
 Phase[1]["WindowSpeed"]=0.5
 Phase[1]["PhaseDuration"]=80
-Phase[1]["PauseDuration"]=120
+Phase[1]["PauseDuration"]=240
 Phase[2]={}
 Phase[2]["RemoteLocks"]=true
 Phase[2]["RemoteWindows"]=false
@@ -74,7 +74,7 @@ Phase[2]["LockCD"]=10
 Phase[2]["DoorCD"]=10
 Phase[2]["WindowSpeed"]=0.5
 Phase[2]["PhaseDuration"]=120
-Phase[2]["PauseDuration"]=120
+Phase[2]["PauseDuration"]=240
 Phase[3]={}
 Phase[3]["RemoteLocks"]=true
 Phase[3]["RemoteWindows"]=true
@@ -84,7 +84,7 @@ Phase[3]["LockCD"]=10
 Phase[3]["DoorCD"]=10
 Phase[3]["WindowSpeed"]=0.5
 Phase[3]["PhaseDuration"]=120
-Phase[3]["PauseDuration"]=80
+Phase[3]["PauseDuration"]=160
 Phase[4]={}
 Phase[4]["RemoteLocks"]=true
 Phase[4]["RemoteWindows"]=true
@@ -100,6 +100,7 @@ Phase[4]["PauseDuration"]=120
 UI_CONTAINER:LookAtContinuous(MAIN_CAMERA)
 
 function Hide()
+    Task.Wait(2)
     if CurrentDoorID~=0 then
         DoorTime[CurrentDoorID]["JumpT"]=time()+2
     end
@@ -112,6 +113,10 @@ function Hide()
 end
 
 function JumpToDoor(ID)
+    while time()<JumpDelay do
+        Task.Wait(0.1)
+    end
+    JumpDelay=time()+math.random(50)/10
     Hidden=false
     if ID==1 then
         KILLER:SetRotation(Rotation.New(0,0,0))
