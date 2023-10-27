@@ -17,8 +17,11 @@ local HANDS_SFX = script:GetCustomProperty("HandsSFX"):WaitForObject()
 local BLACK_SCREEN = script:GetCustomProperty("BlackScreen"):WaitForObject()
 local DOOR_OPEN_SFX = script:GetCustomProperty("DoorOpenSFX"):WaitForObject()
 local OUTSIDE_AMBIENCE_SFX = script:GetCustomProperty("OutsideAmbienceSFX"):WaitForObject()
+local STATIC_SFX = script:GetCustomProperty("StaticSFX"):WaitForObject()
+local RADIO_1_SFX = script:GetCustomProperty("Radio1SFX"):WaitForObject()
 
-
+local ogPr1=STATIC_SFX.volume
+local ogPr2=RADIO_1_SFX.volume
 
 local Show=false
 Task.Wait(3)
@@ -55,6 +58,8 @@ function DoorDeath(ID)
     Show=true
     for pr=1,50 do
         OUTSIDE_AMBIENCE_SFX.volume=1-(pr/50)
+        STATIC_SFX.volume=ogPr1-(pr/50)
+        RADIO_1_SFX.volume=ogPr2-(pr/50)
         Task.Wait(0.01)
     end
     --Task.Wait(0.5)

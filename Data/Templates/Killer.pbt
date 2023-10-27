@@ -685,6 +685,24 @@ Assets {
               Id: 7550598561086352304
             }
           }
+          Overrides {
+            Name: "cs:StaticSFX"
+            ObjectReference {
+              SelfId: 14952689969726670206
+            }
+          }
+          Overrides {
+            Name: "cs:KillerSwitchSFX"
+            ObjectReference {
+              SelfId: 5472471494912085693
+            }
+          }
+          Overrides {
+            Name: "cs:Radio1SFX"
+            ObjectReference {
+              SelfId: 1227358957894611583
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
