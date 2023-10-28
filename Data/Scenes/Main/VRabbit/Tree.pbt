@@ -7806,7 +7806,7 @@ Objects {
       }
     }
     Text {
-      Label: "This game contains FLASHING LIGHTS, scenes of violence, jumps scare triggers, scary images, and intence sounds that may not be suitable for children as well as players with certain medical conditions."
+      Label: "This game contains FLASHING LIGHTS, scenes of violence, jumps scare triggers, scary images, and intense sounds that may not be suitable for children or players with certain medical conditions."
       Color {
         R: 1
         G: 1
