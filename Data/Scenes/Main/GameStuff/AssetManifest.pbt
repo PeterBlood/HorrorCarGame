@@ -593,6 +593,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11387433549695865611
+  Name: "Vehicle Car Drag Race Hot Rod Engine Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vehicle_car_drag_race_hot_rod_engine_loop_01_Cue_ref"
+  }
+}
+Assets {
   Id: 11344848841693429837
   Name: "Wireframe"
   PlatformAssetType: 2
