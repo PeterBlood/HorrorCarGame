@@ -870,9 +870,6 @@ Objects {
     Volume: 1
     Falloff: -1
     Radius: 10000
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -915,9 +912,6 @@ Objects {
     Volume: 0.4
     Falloff: -1
     Radius: 900
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -21718,7 +21712,7 @@ Objects {
     AudioAsset {
       Id: 3852228900322088215
     }
-    Volume: 0.8
+    Volume: 1
     Falloff: -1
     Radius: -1
   }
@@ -21826,6 +21820,18 @@ Objects {
       Name: "cs:OutsideAmbienceSFX"
       ObjectReference {
         SelfId: 16616279683480457776
+      }
+    }
+    Overrides {
+      Name: "cs:Vehicle Car Drag Race Hot Rod Engine Loo"
+      ObjectReference {
+        SelfId: 2913129813867086191
+      }
+    }
+    Overrides {
+      Name: "cs:Ambience Suburbs Night Crickets 01 SFX"
+      ObjectReference {
+        SelfId: 2121017749094676424
       }
     }
   }
@@ -35436,6 +35442,7 @@ Objects {
   ChildIds: 1782807561680044595
   ChildIds: 2391263011315130328
   ChildIds: 13216039594927465509
+  ChildIds: 3588026557864434908
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -35467,6 +35474,147 @@ Objects {
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 3588026557864434908
+  Name: "Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1395031835030141995
+  ChildIds: 6130309829718838802
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+      ContentType {
+        Value: "mc:ecanvascontenttype:dynamic"
+      }
+      IsHUD: true
+      CanvasWorldSize {
+        X: 1024
+        Y: 1024
+      }
+      RedrawTime: 30
+      UseSafeZoneAdjustment: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 6130309829718838802
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3588026557864434908
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIX: 10
+    UIY: -10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "-"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 40
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 14613699412324816104
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+    }
   }
   IsReplicationEnabledByDefault: true
 }
@@ -36193,14 +36341,14 @@ Objects {
       }
     }
     Text {
-      Label: "Listen for audio cues, if you can\'t hear the radio, turn up your sound.\r\n\r\nKeep the doors locked and the window up at all times, watch the windows.\r\n\r\nNote the movement buttons at the bottom of the screen, they will tell you where you can move.\r\n\r\nType on the keyboard to dial the phone"
+      Label: "Listen for audio cues, if you can\'t hear the radio, turn up your sound.\r\n\r\nKeep the doors locked and the window up at all times, watch the windows.\r\n\r\nNote the movement buttons at the bottom of the screen, they will tell you where you can move.\r\n\r\nType on the keyboard to dial the phone\r\n\r\nThe Killer comes and goes."
       Color {
         R: 1
         G: 1
         B: 1
         A: 1
       }
-      Size: 30
+      Size: 27
       Justification {
         Value: "mc:etextjustify:left"
       }

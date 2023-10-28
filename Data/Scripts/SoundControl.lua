@@ -57,7 +57,8 @@ function DoorDeath()
 end
 Events.Connect("DoorDeath",DoorDeath)
 
-
+local VEHICLE_CAR_DRAG_RACE_HOT_ROD_ENGINE_LOO = script:GetCustomProperty("Vehicle Car Drag Race Hot Rod Engine Loo"):WaitForObject()
+local AMBIENCE_SUBURBS_NIGHT_CRICKETS_01_SFX = script:GetCustomProperty("Ambience Suburbs Night Crickets 01 SFX"):WaitForObject()
 AMBIENCE_SFX.volume=0
 OUTSIDE_AMBIENCE_SFX.volume=0
 function StartGame()
@@ -65,3 +66,9 @@ function StartGame()
     BlockUpdate=false
 end
 Events.Connect("StartGame",StartGame)
+
+function StartCinematic()
+    VEHICLE_CAR_DRAG_RACE_HOT_ROD_ENGINE_LOO:Play()
+    AMBIENCE_SUBURBS_NIGHT_CRICKETS_01_SFX:Play()
+end
+Events.Connect("StartCinematic",StartCinematic)

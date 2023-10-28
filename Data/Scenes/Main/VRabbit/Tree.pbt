@@ -5593,6 +5593,18 @@ Objects {
         SelfId: 14268854034386733560
       }
     }
+    Overrides {
+      Name: "cs:Container"
+      ObjectReference {
+        SelfId: 3588026557864434908
+      }
+    }
+    Overrides {
+      Name: "cs:UI Text Box"
+      ObjectReference {
+        SelfId: 6130309829718838802
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

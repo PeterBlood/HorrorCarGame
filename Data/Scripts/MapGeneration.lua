@@ -14,7 +14,7 @@ local BOOK_CLIENT = script:GetCustomProperty("BookClient")
 local SCREWDRIVER_CLIENT = script:GetCustomProperty("ScrewdriverClient")
 
 function GenerateNumber()
-    local str="902"
+    local str=""
     for a=1,7 do
         str=str..tostring(math.random(10)-1)
     end
