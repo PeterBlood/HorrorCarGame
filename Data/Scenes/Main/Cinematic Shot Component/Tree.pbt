@@ -31,7 +31,7 @@ Objects {
     }
     Overrides {
       Name: "cs:PlayOnAction"
-      String: "Play Shot"
+      String: ""
     }
     Overrides {
       Name: "cs:SequenceNumber"
@@ -47,7 +47,7 @@ Objects {
     }
     Overrides {
       Name: "cs:PlayOnEvent"
-      String: "Overlap"
+      String: "StartCinematic"
     }
     Overrides {
       Name: "cs:LookAtPlayer"
@@ -462,44 +462,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 16289838474460724250
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 10785100915471240148
-  Name: "Cinematic Shot Bindings"
-  Transform {
-    Location {
-      Y: 6900
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6820726947591553935
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  BindingSet {
-    BindingSetAsset {
-      Id: 4750859414697067089
     }
   }
   NetworkRelevanceDistance {

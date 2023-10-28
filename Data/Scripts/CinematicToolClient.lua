@@ -137,10 +137,8 @@ function Play()
 	if GetActiveTake() then
 		GetActiveTake().Stop()
 	end
-
 	SetActiveTake(script)
 	isPlaying = true
-
 	CAMERA:SetWorldPosition(START_POS)
 	CAMERA.fieldOfView = START_FOV
 
@@ -204,6 +202,7 @@ function OnBindingPressed(player, action)
 			Next()
 
 		elseif (isHeadTake and (GetActiveTake() == nil or GetActiveTake().KEY_BINDING ~= KEY_BINDING)) then
+			--Events.Broadcast("StartCinematic")
 			Play()
 		end
 	end

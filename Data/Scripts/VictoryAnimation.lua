@@ -18,7 +18,15 @@ function VictoryHotwire()
     Events.Broadcast("StopLooking")
     CAR_MOVE_SFX:Play()
     GameOver=true
-
+    Task.Wait(1.0)
+    Events.Broadcast("StartCinematic")
+    for pr=1,50 do
+        BLACK_SCREEN.opacity=1-(pr/50)
+        Task.Wait(0.01)
+    end
+    Task.Wait(17)
+    BLACK_SCREEN.opacity=1
+    Events.BroadcastToServer("Restart")
 end
 Events.Connect("VictoryHotwire",VictoryHotwire)
 
@@ -36,6 +44,15 @@ function VictoryPhone()
     SHUTDOWN_SFX:Play()
     BLACK_SCREEN.opacity=1
     BLACK_SCREEN.visibility=Visibility.FORCE_ON
+    Task.Wait(1)
+    Events.Broadcast("StartCinematic")
+    for pr=1,50 do
+        BLACK_SCREEN.opacity=1-(pr/50)
+        Task.Wait(0.01)
+    end
+    Task.Wait(17)
+    BLACK_SCREEN.opacity=1
+    Events.BroadcastToServer("Restart")
 end
 Events.Connect("VictoryPhone",VictoryPhone)
 

@@ -76,6 +76,8 @@ function DoorDeath(ID)
     Task.Wait(0.9)
     BLACK_SCREEN.visibility=Visibility.FORCE_ON
     HUMANOID_1_RIG.visibility=Visibility.FORCE_OFF
+    Task.Wait(2)
+    Events.BroadcastToServer("Restart")
 end
 Events.Connect("DoorDeath",DoorDeath)
 
@@ -95,8 +97,30 @@ function ElectrocutionDeath()
         BLACK_SCREEN.opacity=pr/100
         Task.Wait(0.04)
     end
+    Task.Wait(2)
 end
 Events.Connect("ElectrocutionDeath",ElectrocutionDeath)
+
+
+
+function VictoryPhone()
+    for pr=1,50 do
+        OUTSIDE_AMBIENCE_SFX.volume=1-(pr/50)
+        STATIC_SFX.volume=ogPr1-(pr/50)
+        RADIO_1_SFX.volume=ogPr2-(pr/50)
+        Task.Wait(0.01)
+    end
+end
+Events.Connect("VictoryPhone",VictoryPhone)
+function VictoryHotwire()
+    for pr=1,50 do
+        OUTSIDE_AMBIENCE_SFX.volume=1-(pr/50)
+        STATIC_SFX.volume=ogPr1-(pr/50)
+        RADIO_1_SFX.volume=ogPr2-(pr/50)
+        Task.Wait(0.01)
+    end
+end
+Events.Connect("VictoryHotwire",VictoryHotwire)
 --[[
 function Press(_,action,_)
     if action=="0" then

@@ -49,6 +49,7 @@ if not OBJECT then
     error("This script needs an object to change transform properties.")
 end
 
+local OgPos=OBJECT:GetWorldPosition()
 -- Variables
 local startValue = nil
 local targetValue = nil
@@ -81,7 +82,7 @@ end
 -- Starts moving the target object
 function StartAction()
     if not Object.IsValid(OBJECT) then return end
-
+    OBJECT:SetWorldPosition(OgPos)
     if not isStarted then
         -- Delay wait
         Task.Wait(RandomFloat(DELAY_RANGE.x, DELAY_RANGE.y))
