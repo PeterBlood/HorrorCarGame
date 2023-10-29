@@ -98,6 +98,7 @@ function ElectrocutionDeath()
         Task.Wait(0.04)
     end
     Task.Wait(2)
+    Events.BroadcastToServer("Restart")
 end
 Events.Connect("ElectrocutionDeath",ElectrocutionDeath)
 
