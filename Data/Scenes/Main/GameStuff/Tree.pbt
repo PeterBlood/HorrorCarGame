@@ -2276,6 +2276,7 @@ Objects {
   ChildIds: 12529041908791588278
   ChildIds: 1101187584936929444
   ChildIds: 6677502192139703358
+  ChildIds: 15736884560313836933
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2287,6 +2288,117 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15736884560313836933
+  Name: "Humanoid 2 Rig"
+  Transform {
+    Location {
+      X: -45.8254433
+      Y: -78.7485733
+      Z: 161.733948
+    }
+    Rotation {
+      Pitch: -5.34283447
+    }
+    Scale {
+      X: 1.2808243
+      Y: 1.2808243
+      Z: 1.2808243
+    }
+  }
+  ParentId: 12228418577259334636
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:1:Shared_BaseMaterial:color"
+      Color {
+        G: 0.0264237896
+        B: 0.210000038
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:1:Shared_Detail1:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:1:Shared_Detail2:color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:1:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10986822599944641487
+      }
+    }
+    Overrides {
+      Name: "ma:1:Shared_Detail1:id"
+      AssetReference {
+        Id: 10435865723882967487
+      }
+    }
+    Overrides {
+      Name: "ma:1:Shared_Detail2:id"
+      AssetReference {
+        Id: 2081802309646555670
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14967792594959119569
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_sit_car_low"
+      }
+      SkinnedMeshes {
+        Id: 1820384692755470661
+      }
+      SkinnedMeshes {
+        Id: 15877156280505314121
+      }
+      SkinnedMeshes {
+        Id: 719650589206841076
+      }
+      SkinnedMeshes {
+        Id: 17379923048804865101
+      }
+    }
+  }
+  Relevance {
+    Value: "mc:edistancerelevance:critical"
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"

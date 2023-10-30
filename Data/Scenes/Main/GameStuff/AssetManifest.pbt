@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17379923048804865101
+  Name: "Humanoid 2 Casual Jeans"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_lower_clothing_001_ref"
+  }
+}
+Assets {
   Id: 17361666871864470786
   Name: "Line Full 008"
   PlatformAssetType: 9
@@ -221,6 +230,15 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "PlayRegular_ref"
+  }
+}
+Assets {
+  Id: 15877156280505314121
+  Name: "Humanoid 2 Leather Jacket"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_upper_casual_004_ref"
   }
 }
 Assets {
@@ -1295,6 +1313,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1820384692755470661
+  Name: "Humanoid 2 Ramesh"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_head_basic_008_ref"
+  }
+}
+Assets {
   Id: 1813934114089002549
   Name: "Germania One"
   PlatformAssetType: 28
@@ -1364,6 +1391,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_paper_book_open_close_page_fast_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 719650589206841076
+  Name: "Humanoid 2 Core Shirt"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_upper_basic_000_ref"
   }
 }
 Assets {
